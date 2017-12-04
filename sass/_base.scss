@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+button:focus, button:active, input:focus, input:active, select:focus, select:active, textarea:focus, textarea:active {
+  outline: none;
+}
+
+html { 
+  height: 100%;
+  // @include for-narrow-layout {
+  //   font-size: 14px;
+  // }
+}
+
+body {
+  min-height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  font: 1rem/1.5 $font-main-normal, Arial, Helvetica, sans-serif;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: #fff;
+    background: $color-3;
+}
+
+::selection {
+    color: #fff;
+    background: $color-3;
+}
+
+a, a:link, a:visited {
+  transition: all 0.3s;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $font-main-normal;
+    line-height: 1.3;
+    letter-spacing: 0;
+    font-weight: bold;
+    margin-bottom: 0.45em;
+}
+
+img:not(.admin-menu-icon) {
+  width: 100%;
+  height: auto;
+}
+
+button, select {
+  cursor: pointer;
+}
+
+button, .btn a {
+  background: transparent;
+  color: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  border-radius: unset;
+  border: none;
+  text-shadow: none;
+}
+
+button:focus, button:active, input:focus, input:active, select:focus, select:active, textarea:focus, textarea:active {
+  box-shadow: $color-3;
+  z-index: 1;
+}
+
+button.clear-btn:focus, button.clear-btn:active {
+  box-shadow: none;
+}
+
+small {
+  font-size: $font-size-small;
+}
+
+strong {
+  // font-family: $font-main-bold;
+}
+
+ul,
+fieldset {
+  padding: 0;
+  margin: 0;
+}
+
+fieldset {
+  border: none;
+}
+
+abbr[title], acronym[title] {
+    text-decoration: none;
+}
+
+.time-default {
+  direction: ltr;
+}
+
+/*-----------Field Collections------------*/
+
+.field-collection-container {
+    border: none;
+    margin: 0;
+}
+
+.field-collection-view {
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.field-collection-view .entity-field-collection-item {
+  margin-bottom: 15px;
+}

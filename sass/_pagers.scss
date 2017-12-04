@@ -1,0 +1,43 @@
+/*----------------custome pagers--------------------*/
+
+.item-list .pager {
+  display: flex;
+  justify-content: center;
+  background: none;
+  border: none;
+  margin: 40px 0;
+  
+  li {
+    border: none;
+    a {
+      font-family: $font-main-normal;
+      font-weight: normal;
+      font-size: rem(26px);
+      color: $highlite-color-1;
+      background: none;
+      &:hover {
+        color: $highlite-color-3;
+      }
+    }
+    &.pager-current {
+      font-family: $font-main-normal;
+      font-weight: normal;
+      background: none;
+      font-size: rem(26px);
+      color: inherit;
+    }
+  }
+  
+  .pager-next, .pager-last, .pager-previous, .pager-first {
+    position: static;
+    a {
+      display: inline-block;
+      font-family: FontAwesome;
+      font-size: rem(26px);
+      color: $highlite-color-1;
+      text-rendering: auto; // optimizelegibility throws things off #1094
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+  }
+}

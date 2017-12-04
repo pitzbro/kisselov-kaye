@@ -1,0 +1,110 @@
+.form-item, .form-actions {
+    margin: 0;
+}
+
+.form-actions {
+    text-align: end;
+}
+
+.form-item {
+    margin-bottom: 25px;
+}
+
+textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
+    width: 100%;
+    background: transparent;
+    border: $main-border;
+    font-family: $font-main-normal;
+    line-height: $form-item-height;
+    height: $form-item-height;
+    color: $main-text-color;
+    padding: 0 10px;
+    &::placeholder {
+        color: $light-text-color;
+    }
+
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+textarea {
+    height: auto;
+    line-height: 2;
+    padding: 10px;
+}
+
+input[type="reset"], input[type="submit"], input[type="button"] {
+    @include button($highlite-color-3, $highlite-color-5);
+    font-size: initial;
+}
+
+.dark-bg, .page-user .section-content {
+    textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
+        border: none;
+        background: transparent;
+        color: #fff;
+        font-family: $font-main-normal;
+        font-size: $font-size-large;
+        line-height: 30px;
+        height: 30px;
+        padding: 0;
+        border-bottom: 2px solid $secondary-color;
+        margin-bottom: 25px;
+
+        &:focus {
+            border-color: $highlite-color-3;
+        }
+        &::placeholder {
+            color: #fff;
+        }
+    }
+
+    textarea {
+        min-height: 130px;
+    }
+
+    button, input[type="reset"], input[type="submit"], input[type="button"] {
+        font-family: $font-main-bold;
+        font-size: $font-base;
+        background: transparent;
+        border: 1px solid $main-text-color;
+        border-radius: 0;
+        padding: 0 40px;
+        height: 30px;
+        line-height: 30px;
+        text-shadow: none;
+        color: #fff;
+
+        transition: all .2s;
+
+        &:hover {
+            background: $highlite-color-3;
+        }
+    }
+}
+
+/*------ Icons -------*/
+
+.form-item-combine {
+    position: relative;
+
+    input {
+        padding-left: $form-item-height;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        font-family: FontAwesome;
+        line-height: $form-item-height;
+        padding: 0 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        color: $light-text-color;
+        text-rendering: auto; // optimizelegibility throws things off #1094
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;    
+    }
+}

@@ -1,0 +1,173 @@
+/*------------Admin CSS---------*/
+
+.admin-menu-processed {
+    font-size: 12px !important;
+}
+
+.tabs {
+    margin-bottom: 25px;
+}
+
+/*-------------Frame---------------------*/
+
+body:before, body:after {
+    content: "";
+    position: fixed;
+    background: $highlite-color-1;
+    left: 0;
+    right: 0;
+    height: 10px;
+}
+body:before {
+    top: 0;
+}
+body:after {
+    bottom: 0;
+}
+body {
+    border-left: 10px solid $highlite-color-1;
+    border-right: 10px solid $highlite-color-1; 
+}
+
+/*---------- Layout  ----------*/
+
+.section-content {
+    // padding: 40px 0 20px;
+    .front & {
+        padding-bottom: 0;
+    }
+}
+
+
+.zone-wrapper:not(.zone-footer-wrapper):not(.zone-contact-wrapper):not(.zone-header-wrapper) {
+    margin-bottom: 20px;
+    padding: 30px 0
+}
+
+/*---------- Sidebar Layout  ----------*/
+
+.sidebar-layout .region-content-inner {
+    display: flex;
+    flex-wrap: wrap;
+
+    .tabs {
+        flex: 0 0 100%;
+    }
+
+    .sidebar {
+        flex: 0 0 200px;
+        margin-left: 30px; 
+    }
+
+    .region-blockgroup-main-content-group {
+        flex: 1;
+        overflow: hidden;
+    }
+
+}
+
+.node-type-archive-page.sidebar-layout .region-content-inner > .block-system {
+        display:none;
+}
+
+/*---------- Full Width Layout  ----------*/
+
+.full-width-text {
+    .block-main {
+        max-width: 680px;
+        margin: 0 auto;
+    }
+}
+
+
+/*---------- User Bar ---------*/
+
+.zone-user-wrapper {
+    background: $background-color-002;
+    padding: 30px 0;
+    .blog-page & {
+        background: $highlite-color-3;
+        padding: 15px 0;
+        h1 {
+            margin-bottom: 0;
+            font-size: rem(33px);
+            color: #fff;
+        }
+    }
+}
+
+/*---------- Preface Script ---------*/
+
+.zone-preface-wrapper {
+    background: #fff;
+    padding: 30px 0;
+}
+
+
+/*---------- Post Script ---------*/
+
+.zone-postscript-wrapper {
+    padding: 30px 0;
+}
+
+/*---------- Banner Script ---------*/
+
+.zone-banner-wrapper {
+    background: $highlite-color-1;
+    color: #fff;
+    text-align: center;
+    a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    h2 {
+        font-size: rem(60px);
+    }
+
+    a.full-link, a:link.full-link, a:visited.full-link {
+        position: relative;
+    }
+
+    .subtitle-line {
+        position: absolute;
+        border: solid 2px #fff;
+        bottom: 0;
+        left: 0;
+        margin: 20px 0;
+        width: 100%;
+    }
+
+    .subtitle {
+        display: inline-block;
+        position: relative;
+        font-size: rem(33px);
+        display: inline-block;
+        background: $highlite-color-1;
+        padding: 0 35px;
+    }
+}
+
+/*---------- Back To Top Button ---------*/
+
+#back-top {
+    left: 35px;
+    margin: 0px;
+    bottom: 20px;
+    span#button {
+        border-radius: 50%;
+    }
+}
+
+/*---------- Login Page ---------*/
+
+.page-user .section-content {
+    color: #fff;
+    background: rgba(0,0,0,.8) url(../images/bg-001.jpg) no-repeat;
+    background: -webkit-linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)),url(../images/bg-001.jpg) no-repeat;
+    background: -moz-linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)),url(../images/bg-001.jpg) no-repeat;
+    background: -o-linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)),url(../images/bg-001.jpg) no-repeat;
+    background: linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)),url(../images/bg-001.jpg) no-repeat;
+    background-size: cover;
+    background-position: 50%;
+}

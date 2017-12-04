@@ -1,0 +1,232 @@
+/*-----------------Main Teasers Preview-----------------------*/
+
+
+.teaser {
+  
+  // background: #fff;
+  margin-bottom: 35px;
+
+  .dark-bg &, &.dark-bg {
+    background: #fff;
+  }
+  .light-bg & {
+    background: $main-color;
+    color: #000;
+  }
+
+  .teaser-image {
+    flex: 0 0 385px;
+  }
+
+  .teaser-content {
+    flex: 1;
+  }
+
+  .teaser-date {
+
+    font-family: $font-main-bold;
+    font-size: $font-h4;
+    color: $highlite-color-2;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    border-bottom: 3px solid $light-text-color-2;
+
+    > div {
+      flex: 1;
+      border-left: 2px solid $light-text-color-2;
+      &:last-child {
+        border: none;
+      }
+    }
+  }
+
+  .teaser-info {
+    flex: 1;
+    overflow: hidden;
+    padding: 20px 25px;
+    color: #000;
+  }
+}
+
+.teaser.search-item {
+  min-height: 120px;
+  margin-bottom: 45px;
+  .teaser-image {
+    flex: 0 0 140px;
+    &.קונצרט {
+      flex: 0 0 215px;
+    }
+  }
+  .teaser-info {
+    padding: 0 25px 0 0;
+  }
+  // .teaser-top {
+  //   font-family: $font-main-bold;
+  // }
+  h2 {
+    margin-bottom: 0;
+    a {
+      color: initial;
+      text-decoration: none;
+    }
+  }
+  p {
+    margin-bottom: 5px;
+  }
+}
+
+.teaser-square-view.col-2  > .view-content {
+  .teaser-square-item {
+    flex: 0 0 calc(50% - 10px);
+  }
+  &:after {
+    display: none;
+  }
+}
+
+.teaser-square-view > .view-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  &:after {
+    content: "";
+    flex: 0 0 300px;
+  }
+  
+  @include for-mobile-layout {
+    justify-content: space-around;
+  }
+  .teaser-square-item {
+    flex: 0 0 300px;
+    margin-bottom: 20px;
+
+    &.col-2 {
+      flex: 0 0 calc(50% - 10px);
+    }
+    .teaser-square-image {
+      display: block;
+      overflow: hidden;
+      position: relative;
+      width: 300px;
+      height: 300px;
+      
+      .default-image {
+        background-image: url('../images/default-square.jpg');
+      }
+    }
+    .teaser-square-info {
+      display: block;
+      margin: 12px 12px 25px; 
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+
+      &:hover {
+        color: $highlite-color-3;
+      }
+    }
+  }
+}
+
+
+.teaser-large, a.teaser-large {
+
+  display: block;
+  text-decoration: none;
+  color: #fff;
+  padding-bottom: 45px;
+  margin-bottom: 45px;
+  border-bottom: $bold-border;
+
+  .teaser-large-image {
+    display: block;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    .default-image {
+      background-image: url('../images/default-large.jpg');
+    }
+    .teaser-large-info {
+      position: absolute;
+      padding: 30px 35px;
+      bottom: 0;
+    }
+  }
+
+  .more-link {
+    display: block;
+    background: $highlite-color-3;
+    text-align: center;
+    font-family: $font-main-bold;
+    font-size: rem(20px);
+    line-height: 40px;
+  }
+}
+
+.teaser-medium {
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+    .teaser-item {
+      flex: 0 0 445px;
+      background: #fff;
+    }
+
+    .teaser-info {
+      padding: 25px 35px;
+      color: #000;
+    }
+
+  }
+
+/*-----------Filters------------*/
+
+.views-exposed-form .views-exposed-widget {
+  padding: 0 0 0 $form-item-padding;
+  .form-submit {
+    margin-top: 0;
+  }
+
+  input[type="submit"] {
+    @include button($highlite-color-2, $highlite-color-3);
+    &[name="op"] {
+      @include button($highlite-color-5, $highlite-color-3);
+    }
+  }
+}
+
+
+/*--------------Blockgroup----------------*/
+
+.region-blockgroup-archive-teasers-inner {
+  display: flex;
+  justify-content: space-between;
+
+  section {
+      flex: 0 0 calc(50% - 20px);
+
+      h2.block-title {
+        color: inherit;
+        border: none;
+      }
+
+      .view-content {
+        margin-bottom: 45px;
+        a {
+          display: block;
+          color: inherit;
+          text-decoration: none;
+          border-bottom: $main-border;
+          padding: 5px 0;
+          &:hover {
+            color: $highlite-color-3;
+          }
+        }
+      } 
+  }
+}
+

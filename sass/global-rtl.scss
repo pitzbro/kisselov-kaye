@@ -1,0 +1,17 @@
+/*------------Admin Menu RTL Fix---------*/
+
+.admin-menu-processed .dropdown li ul {
+  right: auto !important;;
+}
+.admin-menu-processed .dropdown li li.expandable ul {
+    margin: -20px 160px 0 0 !important;
+}
+
+/*--------------------Global---------------------*/
+
+html {
+    // font-family: $hebrew-font, Arial, Helvetica, sans-serif;
+    // font-size: 18px;
+}
+
+/*--------------------Layout------------------*/
