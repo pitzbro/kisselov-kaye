@@ -36,19 +36,96 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.block {
+  display: block; }
+
+.relative {
+  position: relative; }
+
+.full-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: -1; }
+
+/*----------  Flex Helpers  ----------*/
+.flex, .flex-view .view-content {
+  display: flex; }
+
+.align-center, .flex-view.align-center .view-content {
+  align-items: center; }
+
+.justify-center, .flex-view.justify-center .view-content {
+  justify-content: center; }
+
+.justify-end, .flex-view.justify-end .view-content {
+  justify-content: flex-end; }
+
+.space-between, .flex-view.space-between .view-content {
+  justify-content: space-between; }
+
+.flex-full {
+  flex: 1; }
+
+.flex-wrap, .flex-view.flex-wrap .view-content {
+  flex-wrap: wrap; }
+
+.self-end, .flex-view.self-end .view-content {
+  align-self: flex-end; }
+
+.column, .flex-view.column .view-content {
+  flex-direction: column; }
+
+.full-height {
+  height: 100%; }
+
+.full-width {
+  width: 100%; }
+  .full-width .container-12, .full-width .container-12 .grid-12 {
+    width: 100%;
+    margin: 0; }
+
+.view-filters {
+  clear: both; }
+
+a.more-link {
+  margin: 0 5px; }
+
+.info-link-container {
+  position: fixed;
+  bottom: 30px;
+  right: 20px; }
+  .info-link-container a.info-link {
+    color: #fff;
+    background: #4169e1;
+    font-size: rem(30px);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    transition: background 0.3s; }
+    .info-link-container a.info-link:hover {
+      text-decoration: none;
+      background: #000; }
+
 * {
   box-sizing: border-box; }
 
 button:focus, button:active, input:focus, input:active, select:focus, select:active, textarea:focus, textarea:active {
   outline: none; }
 
-html {
-  height: 100%; }
-
+/*
+html { 
+  height: 100%;
+  @include for-narrow-layout {
+    font-size: 14px;
+  }
+}
+*/
 body {
-  min-height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
   font: 1rem/1.5 "Rubik-Regular", Arial, Helvetica, sans-serif; }
 
 ::-moz-selection {
@@ -122,6 +199,27 @@ abbr[title], acronym[title] {
 
 .field-collection-view .entity-field-collection-item {
   margin-bottom: 15px; }
+
+/*------------Admin CSS---------*/
+.admin-menu-processed {
+  font-size: 12px !important; }
+
+/*-------------Layout---------------*/
+.tabs {
+  position: relative;
+  z-index: 200; }
+
+.section {
+  position: relative;
+  z-index: 0; }
+  .section:not(.section-content) {
+    z-index: 1; }
+
+/*----------------Project Gallery-----------------*/
+.project-gallery .widget_pager_bottom {
+  position: relative;
+  z-index: 200;
+  display: flex; }
 
 /* Components */
 /* Pages */

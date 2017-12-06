@@ -5,18 +5,16 @@
 button:focus, button:active, input:focus, input:active, select:focus, select:active, textarea:focus, textarea:active {
   outline: none;
 }
-
+/*
 html { 
   height: 100%;
-  // @include for-narrow-layout {
-  //   font-size: 14px;
-  // }
+  @include for-narrow-layout {
+    font-size: 14px;
+  }
 }
+*/
 
 body {
-  min-height: 100%;
-  overflow-x: hidden;
-  overflow-y: auto;
   font: 1rem/1.5 $font-main-normal, Arial, Helvetica, sans-serif;
 }
 
