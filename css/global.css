@@ -36,6 +36,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+/* Breakpoint mixins */
+/* Size Functions */
 .block {
   display: block; }
 
@@ -100,7 +102,7 @@ a.more-link {
   .info-link-container a.info-link {
     color: #fff;
     background: #4169e1;
-    font-size: rem(30px);
+    font-size: 1.875rem;
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -215,11 +217,39 @@ abbr[title], acronym[title] {
   .section:not(.section-content) {
     z-index: 1; }
 
+/*-----Menu Region------*/
+.view-filters {
+  display: none; }
+
+.zone-menu {
+  min-height: 50px;
+  background: yellow; }
+  .zone-menu .form-item {
+    display: flex;
+    justify-content: space-between; }
+    .zone-menu .form-item > * {
+      text-align: center;
+      font-size: 0.8125rem; }
+
 /*----------------Project Gallery-----------------*/
 .project-gallery .widget_pager_bottom {
   position: relative;
   z-index: 200;
   display: flex; }
+
+/*----------------Image Grids-----------------*/
+.image-grid-view .view-content {
+  display: grid;
+  grid-template-columns: repeat(5, 168px);
+  grid-auto-rows: 168px;
+  grid-gap: 5px 5px; }
+
+.image-grid-view .grid-item a {
+  display: block; }
+  .image-grid-view .grid-item a img {
+    filter: grayscale(100%); }
+  .image-grid-view .grid-item a:hover img {
+    filter: grayscale(0%); }
 
 /* Components */
 /* Pages */

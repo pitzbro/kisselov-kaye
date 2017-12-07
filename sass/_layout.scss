@@ -18,3 +18,23 @@
         z-index: 1;
     }
 }
+
+/*-----Menu Region------*/
+
+.view-filters {
+    display: none;
+}
+
+.zone-menu {
+    min-height: 50px;
+    background: yellow;
+
+    .form-item {
+        display: flex;
+        justify-content: space-between;
+        > * {
+            text-align: center;
+            font-size: rem(13px);
+        }
+    }
+}
