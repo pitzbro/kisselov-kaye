@@ -217,19 +217,51 @@ abbr[title], acronym[title] {
   .section:not(.section-content) {
     z-index: 1; }
 
+/*-----Header Region------*/
+header {
+  margin-bottom: 30px; }
+  header h1 {
+    margin-bottom: 0; }
+  header .region-header-second-inner {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between; }
+
+/*-----Content Region------*/
+.zone-content {
+  height: 514px;
+  margin-bottom: 30px; }
+
 /*-----Menu Region------*/
 .view-filters {
   display: none; }
 
-.zone-menu {
-  min-height: 50px;
-  background: yellow; }
-  .zone-menu .form-item {
-    display: flex;
-    justify-content: space-between; }
-    .zone-menu .form-item > * {
-      text-align: center;
-      font-size: 0.8125rem; }
+.zone-menu .form-item {
+  display: flex;
+  justify-content: space-between;
+  margin: 0; }
+  .zone-menu .form-item > * {
+    text-align: center;
+    font-size: 0.8125rem; }
+
+/*-----Sidebar First------*/
+.container-24 .region-sidebar-first.grid-24 {
+  position: absolute;
+  width: 514px;
+  top: 514px;
+  left: 6px;
+  line-height: 20px;
+  transform: rotate(-90deg);
+  transform-origin: left top; }
+
+.container-24 .region-sidebar-second.grid-24 {
+  position: absolute;
+  width: 514px;
+  top: 514px;
+  left: 946px;
+  line-height: 20px;
+  transform: rotate(-90deg);
+  transform-origin: left top; }
 
 /*----------------Project Gallery-----------------*/
 .project-gallery .widget_pager_bottom {
@@ -250,6 +282,18 @@ abbr[title], acronym[title] {
     filter: grayscale(100%); }
   .image-grid-view .grid-item a:hover img {
     filter: grayscale(0%); }
+
+.main-menu {
+  font-size: 1.125rem;
+  width: 500px; }
+  .main-menu ul.menu {
+    display: flex;
+    justify-content: space-between;
+    flex: 0 0 500px; }
+    .main-menu ul.menu li.leaf {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
 
 /* Components */
 /* Pages */
