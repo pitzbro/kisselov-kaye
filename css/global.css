@@ -236,20 +236,22 @@ header {
 .view-filters {
   display: none; }
 
-.zone-menu .form-item {
-  display: flex;
-  justify-content: space-between;
-  margin: 0; }
-  .zone-menu .form-item > * {
-    text-align: center;
-    font-size: 0.8125rem; }
+.zone-menu {
+  position: relative; }
+  .zone-menu .form-item {
+    display: flex;
+    justify-content: space-between;
+    margin: 0; }
+    .zone-menu .form-item > * {
+      text-align: center;
+      font-size: 0.8125rem; }
 
 /*-----Sidebar First------*/
 .container-24 .region-sidebar-first.grid-24 {
   position: absolute;
   width: 514px;
-  top: 514px;
-  left: 6px;
+  top: -30px;
+  left: 0;
   line-height: 20px;
   transform: rotate(-90deg);
   transform-origin: left top; }
@@ -257,8 +259,8 @@ header {
 .container-24 .region-sidebar-second.grid-24 {
   position: absolute;
   width: 514px;
-  top: 514px;
-  left: 946px;
+  top: -30px;
+  left: 920px;
   line-height: 20px;
   transform: rotate(-90deg);
   transform-origin: left top; }
@@ -272,9 +274,9 @@ header {
 /*----------------Image Grids-----------------*/
 .image-grid-view .view-content {
   display: grid;
-  grid-template-columns: repeat(5, 168px);
-  grid-auto-rows: 168px;
-  grid-gap: 5px 5px; }
+  grid-template-columns: repeat(6, 140px);
+  grid-auto-rows: 140px;
+  grid-gap: 4px 4px; }
 
 .image-grid-view .grid-item a {
   display: block; }

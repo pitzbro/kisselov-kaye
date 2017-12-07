@@ -48,6 +48,8 @@ header {
 }
 
 .zone-menu {
+
+    position: relative;
     
     .form-item {
         display: flex;
@@ -65,8 +67,8 @@ header {
 .container-24 .region-sidebar-first.grid-24 {
     position: absolute;
     width: $content-height;
-    top: $content-height;
-    left: 6px;
+    top: -30px;
+    left: 0;
     line-height: 20px;
     transform: rotate(-90deg);
     transform-origin: left top;
@@ -75,8 +77,8 @@ header {
 .container-24 .region-sidebar-second.grid-24 {
     position: absolute;
     width: $content-height;
-    top: $content-height;
-    left: 946px;
+    top: -30px;
+    left: 920px;
     line-height: 20px;
     transform: rotate(-90deg);
     transform-origin: left top;
