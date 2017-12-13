@@ -15,7 +15,7 @@ html {
 */
 
 body {
-  font: 12px/1.5 $font-main-normal, Arial, Helvetica, sans-serif;
+  font: 12px/2 $font-main-normal, Arial, Helvetica, sans-serif;
 }
 
 ::-moz-selection { /* Code for Firefox */
@@ -72,6 +72,11 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 
 button.clear-btn:focus, button.clear-btn:active {
   box-shadow: none;
+}
+
+label, .label {
+  font-family: $font-main-bold;
+  display: block;
 }
 
 small {

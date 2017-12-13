@@ -128,7 +128,7 @@ html {
 }
 */
 body {
-  font: 12px/1.5 "Rubik-Regular", Arial, Helvetica, sans-serif; }
+  font: 12px/2 "Rubik-Regular", Arial, Helvetica, sans-serif; }
 
 ::-moz-selection {
   /* Code for Firefox */
@@ -176,6 +176,10 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 
 button.clear-btn:focus, button.clear-btn:active {
   box-shadow: none; }
+
+label, .label {
+  font-family: "Rubik-Bold";
+  display: block; }
 
 small {
   font-size: rem(10px); }
@@ -236,14 +240,14 @@ header.section {
   position: fixed;
   left: 0;
   top: 0;
-  padding-bottom: 20px; }
+  padding-bottom: 30px; }
   header.section h1 {
     margin-bottom: 0; }
   header.section .zone-header {
     height: 100%;
     display: flex; }
     header.section .zone-header .region-header-first {
-      flex: 1; }
+      position: fixed; }
     header.section .zone-header .region-header-second {
       align-self: flex-end; }
   header.section .region-header-second-inner {
@@ -254,6 +258,23 @@ header.section {
 /*-----Content Region------*/
 .zone-content {
   margin: calc( 50vh - 257px) auto; }
+  .zone-content a#main-content {
+    display: none; }
+  .zone-content a, .zone-content a:link, .zone-content a:visited {
+    display: inline-block;
+    position: relative; }
+    .zone-content a::after, .zone-content a:link::after, .zone-content a:visited::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 0;
+      height: 1px;
+      background: #B0B0B0;
+      transition: width .3s; }
+    .zone-content a:hover::after, .zone-content a:link:hover::after, .zone-content a:visited:hover::after {
+      width: 100%; }
+    .zone-content a:hover, .zone-content a:link:hover, .zone-content a:visited:hover {
+      color: #B0B0B0; }
 
 /*-----Menu Region------*/
 .view-filters {
@@ -299,10 +320,45 @@ footer.section {
   height: calc( 50vh - 257px); }
 
 /*----------------Project Gallery-----------------*/
-.project-gallery .widget_pager_bottom {
-  position: relative;
-  z-index: 200;
-  display: flex; }
+.gallery-page .tabs {
+  position: absolute;
+  top: -10px; }
+
+.gallery-page header.section, .gallery-page footer.section {
+  background: transparent; }
+
+.gallery-page .container-24 .prefix-1.region-content {
+  padding-left: 100px; }
+
+.gallery-page .views-slideshow-cycle-main-frame-row {
+  width: 800px !important;
+  height: 514px !important; }
+
+.gallery-page img {
+  width: auto;
+  float: right; }
+
+/*----------------Project Gallery-----------------*/
+.project-gallery {
+  height: 514px;
+  position: relative; }
+  .project-gallery .widget_pager_bottom {
+    position: relative;
+    z-index: 200;
+    display: flex; }
+  .project-gallery .project-info {
+    position: absolute;
+    top: 60px;
+    left: -60px;
+    width: 180px; }
+  .project-gallery .gallery-text {
+    width: 660px;
+    float: right;
+    padding-top: 60px; }
+  .project-gallery .views-slideshow-controls-bottom {
+    position: absolute;
+    bottom: 20px;
+    left: -60px; }
 
 /*----------------Image Grids-----------------*/
 .image-grid-view .view-content {

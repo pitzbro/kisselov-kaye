@@ -1,9 +1,57 @@
 /*----------------Project Gallery-----------------*/
 
+.gallery-page {
+    .tabs {
+        position: absolute;
+        top: -10px;
+    }
+    header.section, footer.section {
+        background: transparent;
+    }
+    .container-24 .prefix-1.region-content {
+        padding-left: 100px;
+    }
+
+    .views-slideshow-cycle-main-frame-row {
+        width: 800px !important;
+        height: 514px !important;
+    }
+
+    img {
+        width: auto;
+        float: right;
+    }
+}
+
+/*----------------Project Gallery-----------------*/
+
 .project-gallery {
+
+    height: $content-tall-height;
+    position: relative;
+
     .widget_pager_bottom  {
         position: relative;
         z-index: 200;
         display: flex;
+    }
+
+    .project-info {
+        position: absolute;
+        top: 60px;
+        left: -60px;
+        width: 180px;
+    }
+
+    .gallery-text {
+        width: 660px;
+        float: right;
+        padding-top: 60px;
+    }
+
+    .views-slideshow-controls-bottom  {
+        position: absolute;
+        bottom: 20px;
+        left: -60px;
     }
 }

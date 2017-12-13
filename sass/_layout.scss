@@ -36,7 +36,7 @@ header.section {
     position: fixed;
     left: 0;
     top: 0;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     h1 {
         margin-bottom: 0;
     }
@@ -45,7 +45,7 @@ header.section {
         height: 100%;
         display: flex;
         .region-header-first {
-            flex: 1;
+            position: fixed;
         }
         .region-header-second {
             align-self: flex-end;
@@ -61,7 +61,29 @@ header.section {
 /*-----Content Region------*/
 
 .zone-content {
+    a#main-content {
+        display: none;
+    }
     margin: $header-footer-tall-height auto;
+    a, a:link, a:visited {
+        display: inline-block;
+        position: relative;
+        &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 0;
+            height: 1px;
+            background: $color-2;
+            transition: width .3s;
+        }
+        &:hover::after {
+            width: 100%;
+        }
+        &:hover {
+            color: $color-2;
+        }
+    }
 }
 
 
