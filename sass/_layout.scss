@@ -1,5 +1,9 @@
 /*------------Admin CSS---------*/
 
+html body.admin-menu {
+    margin-top: 0 !important;
+}
+
 .admin-menu-processed {
     font-size: 12px !important;
 }
@@ -9,6 +13,10 @@
 .tabs {
     position: relative;
     z-index: 200;
+}
+
+div.messages {
+    margin: 6px 40px;
 }
 
 .section {
@@ -21,10 +29,27 @@
 
 /*-----Header Region------*/
 
-header {
-    margin-bottom: 30px;
+header.section {
+    width: 100%;
+    height: $header-footer-tall-height;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding-bottom: 20px;
     h1 {
         margin-bottom: 0;
+    }
+
+    .zone-header {
+        height: 100%;
+        display: flex;
+        .region-header-first {
+            flex: 1;
+        }
+        .region-header-second {
+            align-self: flex-end;
+        }
     }
     .region-header-second-inner {
         display: flex;
@@ -36,8 +61,7 @@ header {
 /*-----Content Region------*/
 
 .zone-content {
-    height: $content-height;
-    margin-bottom: 30px;
+    margin: $header-footer-tall-height auto;
 }
 
 
@@ -48,9 +72,10 @@ header {
 }
 
 .zone-menu {
-
-    position: relative;
     
+    position: relative;
+    padding-top: 30px;
+
     .form-item {
         display: flex;
         justify-content: space-between;
@@ -64,22 +89,31 @@ header {
 
 /*-----Sidebar First------*/
 
-.container-24 .region-sidebar-first.grid-24 {
+@mixin sidebar($left) {
     position: absolute;
-    width: $content-height;
-    top: -30px;
-    left: 0;
+    width: $content-tall-height;
+    top: 0;
+    left: $left;
     line-height: 20px;
     transform: rotate(-90deg);
-    transform-origin: left top;
+    transform-origin: left top;   
+}
+
+.container-24 .region-sidebar-first.grid-24 {
+    @include sidebar(0);
 }
 
 .container-24 .region-sidebar-second.grid-24 {
-    position: absolute;
-    width: $content-height;
-    top: -30px;
-    left: 920px;
-    line-height: 20px;
-    transform: rotate(-90deg);
-    transform-origin: left top;
+    @include sidebar(920px);
+}
+
+/*-----  Footer ------*/
+
+footer.section {
+    width: 100%;
+    background: #fff;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: $header-footer-tall-height;
 }

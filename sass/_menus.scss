@@ -14,4 +14,36 @@
             padding: 0;
         }
     }
+    a.active {
+        font-family: $font-main-bold;
+    }
+}
+
+.region-menu {
+    div[class$="-all"] {
+        order: 1;
+    }
+    a {
+        &:hover {
+            color: $color-1;
+            padding-top: 15px;
+        }
+    }
+    a.active {
+        color: $color-1;
+        font-family: $font-main-bold;
+        padding-top: 15px;
+    }
+    &.region-sidebar-first a {
+        &.active, &:hover {
+            padding: 0 0 15px;
+            transform: translate(0, -15px)
+        }
+    }
+}
+
+// Side Menues
+
+.side-menu {
+    color: $color-2;
 }
