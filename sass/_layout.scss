@@ -86,6 +86,11 @@ header.section {
     }
 }
 
+.side-image {
+    flex: 0 0 190px;
+    margin-right: 10px;
+}
+
 
 /*-----Menu Region------*/
 
@@ -96,15 +101,16 @@ header.section {
 .zone-menu {
     
     position: relative;
-    padding-top: 30px;
+    padding-top: 25px;
 
-    .form-item {
+    .form-item, ul.menu {
         display: flex;
         justify-content: space-between;
         margin: 0;
         > * {
             text-align: center;
             font-size: rem(13px);
+            list-style: none;
         }
     }
 }

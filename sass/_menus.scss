@@ -1,3 +1,7 @@
+.side-menu-first, .side-menu-second {
+    display: none;
+}
+
 // Main Menu
 
 .main-menu {
@@ -24,6 +28,7 @@
         order: 1;
     }
     a {
+        display: block;
         &:hover {
             color: $color-1;
             padding-top: 15px;
