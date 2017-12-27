@@ -439,4 +439,12 @@ footer.section {
   color: #B0B0B0; }
 
 /* Components */
+.logo-block {
+  text-align: end;
+  position: fixed;
+  right: 0;
+  padding: 10px; }
+  .logo-block .logo {
+    width: 30px; }
+
 /* Pages */
