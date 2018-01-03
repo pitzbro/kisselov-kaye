@@ -324,7 +324,7 @@ footer.section {
   bottom: 0;
   height: calc( 50vh - 257px); }
 
-/*----------------Project Gallery-----------------*/
+/*----------------Project Gallery Page-----------------*/
 .gallery-page .tabs {
   position: absolute;
   top: -10px; }
@@ -364,6 +364,10 @@ footer.section {
     position: absolute;
     bottom: 20px;
     left: -60px; }
+  .project-gallery .views-slideshow-pager-fields > div {
+    color: #B0B0B0; }
+    .project-gallery .views-slideshow-pager-fields > div.active {
+      color: #000; }
 
 /*----------------Image Grids-----------------*/
 .image-grid-view .view-content {
