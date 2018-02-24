@@ -327,7 +327,11 @@ footer.section {
 /*----------------Project Gallery Page-----------------*/
 .gallery-page .tabs {
   position: absolute;
-  top: -10px; }
+  background: rgba(255, 255, 255, 0.5);
+  width: 100%;
+  left: 0; }
+  .gallery-page .tabs ul.primary {
+    margin: 0; }
 
 .gallery-page header.section, .gallery-page footer.section {
   background: transparent; }
@@ -360,8 +364,12 @@ footer.section {
     width: 660px;
     float: right;
     padding-top: 60px; }
+  .project-gallery .views_slideshow_cycle_main {
+    position: relative;
+    z-index: 10; }
   .project-gallery .views-slideshow-controls-bottom {
     position: absolute;
+    z-index: 20;
     bottom: 20px;
     left: -60px; }
   .project-gallery .views-slideshow-pager-fields > div {
