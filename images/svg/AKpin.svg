@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="38px" height="57px" viewBox="0 0 38 57" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>AK Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop_En_Biography_Contact" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-689.000000, -238.000000)">
+        <g id="AK-Icon" transform="translate(689.000000, 238.000000)">
+            <path d="M38,19.7277211 C38,8.83433458 29.4932915,0 19,0 C8.50670848,0 0,8.83433458 0,19.7277211 C0,30.6248459 19,57 19,57 C19,57 38,30.6248459 38,19.7277211 Z" id="Page-1" fill="#231F20"></path>
+            <text id="AK" font-family="Rubik-Bold, Rubik" font-size="12" font-weight="bold" letter-spacing="0.100000001" fill="#FFFFFF">
+                <tspan x="11.054" y="24">AK</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

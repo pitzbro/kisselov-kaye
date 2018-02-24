@@ -119,16 +119,8 @@ a.more-link {
 button:focus, button:active, input:focus, input:active, select:focus, select:active, textarea:focus, textarea:active {
   outline: none; }
 
-/*
-html { 
-  height: 100%;
-  @include for-narrow-layout {
-    font-size: 14px;
-  }
-}
-*/
 body {
-  font: 12px/2 "Rubik-Regular", Arial, Helvetica, sans-serif; }
+  font: initial/2 "Rubik-Regular", Arial, Helvetica, sans-serif; }
 
 ::-moz-selection {
   /* Code for Firefox */
@@ -209,7 +201,7 @@ abbr[title], acronym[title] {
   border: none; }
 
 .field-collection-view .entity-field-collection-item {
-  margin-bottom: 15px; }
+  margin-bottom: 0.9375rem; }
 
 /*------------Admin CSS---------*/
 html body.admin-menu {
@@ -279,6 +271,9 @@ header.section {
 .side-image {
   flex: 0 0 190px;
   margin-right: 10px; }
+  .side-image img {
+    position: fixed;
+    width: 190px; }
 
 /*-----Menu Region------*/
 .view-filters {
@@ -293,7 +288,7 @@ header.section {
     margin: 0; }
     .zone-menu .form-item > *, .zone-menu ul.menu > * {
       text-align: center;
-      font-size: 0.8125rem;
+      font-size: 0.9375rem;
       list-style: none; }
 
 /*-----Sidebar First------*/
@@ -337,7 +332,7 @@ footer.section {
   background: transparent; }
 
 .gallery-page .container-24 .prefix-1.region-content {
-  padding-left: 100px; }
+  padding-left: 6.25rem; }
 
 .gallery-page .views-slideshow-cycle-main-frame-row {
   width: 800px !important;

@@ -7,7 +7,7 @@
 }
 
 .form-item {
-    margin-bottom: 25px;
+    margin-bottom: rem(25px);
 }
 
 textarea, select, input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"] {
@@ -18,7 +18,7 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
     line-height: $form-item-height;
     height: $form-item-height;
     color: $main-text-color;
-    padding: 0 10px;
+    padding: 0 rem(10px);
     &::placeholder {
         color: $light-text-color;
     }
@@ -31,7 +31,7 @@ textarea, select, input[type="date"], input[type="datetime"], input[type="dateti
 textarea {
     height: auto;
     line-height: 2;
-    padding: 10px;
+    padding: rem(10px);
 }
 
 input[type="reset"], input[type="submit"], input[type="button"] {
@@ -46,11 +46,11 @@ input[type="reset"], input[type="submit"], input[type="button"] {
         color: #fff;
         font-family: $font-main-normal;
         font-size: $font-size-large;
-        line-height: 30px;
-        height: 30px;
+        line-height: rem(30px);
+        height: rem(30px);
         padding: 0;
-        border-bottom: 2px solid $secondary-color;
-        margin-bottom: 25px;
+        border-bottom: rem(2px) solid $secondary-color;
+        margin-bottom: rem(25px);
 
         &:focus {
             border-color: $highlite-color-3;
@@ -61,7 +61,7 @@ input[type="reset"], input[type="submit"], input[type="button"] {
     }
 
     textarea {
-        min-height: 130px;
+        min-height: rem(130px);
     }
 
     button, input[type="reset"], input[type="submit"], input[type="button"] {
@@ -70,9 +70,9 @@ input[type="reset"], input[type="submit"], input[type="button"] {
         background: transparent;
         border: 1px solid $main-text-color;
         border-radius: 0;
-        padding: 0 40px;
-        height: 30px;
-        line-height: 30px;
+        padding: 0 rem(40px);
+        height: rem(30px);
+        line-height: rem(30px);
         text-shadow: none;
         color: #fff;
 
@@ -98,7 +98,7 @@ input[type="reset"], input[type="submit"], input[type="button"] {
         display: block;
         font-family: FontAwesome;
         line-height: $form-item-height;
-        padding: 0 10px;
+        padding: 0 rem(10px);
         position: absolute;
         top: 0;
         left: 0;

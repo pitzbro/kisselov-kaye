@@ -5,17 +5,9 @@
 button:focus, button:active, input:focus, input:active, select:focus, select:active, textarea:focus, textarea:active {
   outline: none;
 }
-/*
-html { 
-  height: 100%;
-  @include for-narrow-layout {
-    font-size: 14px;
-  }
-}
-*/
 
 body {
-  font: 12px/2 $font-main-normal, Arial, Helvetica, sans-serif;
+  font: initial/2 $font-main-normal, Arial, Helvetica, sans-serif;
 }
 
 ::-moz-selection { /* Code for Firefox */
@@ -119,5 +111,5 @@ abbr[title], acronym[title] {
 }
 
 .field-collection-view .entity-field-collection-item {
-  margin-bottom: 15px;
+  margin-bottom: rem(15px);
 }
