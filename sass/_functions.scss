@@ -31,3 +31,18 @@ $narrow-breakpoint: 980px;
 @function em($pixels, $context: 16px) {
   @return ($pixels/$context) * 1em;
 }
+
+/* Pager Functions */
+
+@mixin pager-arrow($inner-text) {
+  // display: inline-block;
+  // overflow: hidden;
+  text-indent: -9999px;
+  &::after {
+    content: $inner-text;
+    color: $color-2;
+  }
+  &:hover::after {
+    color: $color-1;
+  }
+}

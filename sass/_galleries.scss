@@ -30,6 +30,10 @@
 
 /*----------------Project Gallery-----------------*/
 
+.views_slideshow_controls_text span:hover {
+    text-decoration: none;
+}
+
 .project-gallery {
 
     height: $content-tall-height;
@@ -57,6 +61,37 @@
     .views_slideshow_cycle_main {
         position: relative;
         z-index: 10;
+    }
+
+    .views-slideshow-controls-top  {
+        position: absolute;
+        z-index: 20;
+        bottom: 0;
+        left: -60px;
+        a {
+            color: $color-2;
+            &:hover {
+                color: $color-1;
+            }
+            &:after {
+                display: none;
+            }
+        }
+        
+        .views-slideshow-controls-text-pause {
+            display: none;
+        }
+        
+        .views-slideshow-controls-text-previous {
+            @include pager-arrow("<");
+
+        }
+        
+        .views-slideshow-controls-text-next {
+            @include pager-arrow(">");
+ 
+        }
+
     }
 
     .views-slideshow-controls-bottom  {

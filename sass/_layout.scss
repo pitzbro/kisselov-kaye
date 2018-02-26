@@ -19,13 +19,13 @@ div.messages {
     margin: 6px 40px;
 }
 
-.section {
-    position: relative;
-    z-index: 0;
-    &:not(.section-content) {
-        z-index: 1;
-    }
-}
+// .section {
+//     position: relative;
+//     z-index: 0;
+//     &:not(.section-content) {
+//         z-index: 1;
+//     }
+// }
 
 /*-----Header Region------*/
 
@@ -37,6 +37,9 @@ header.section {
     left: 0;
     top: 0;
     padding-bottom: 30px;
+    z-index: 300;
+
+
     h1 {
         margin-bottom: 0;
     }
@@ -148,4 +151,8 @@ footer.section {
     left: 0;
     bottom: 0;
     height: $header-footer-tall-height;
+    z-index: 300;
+    .gallery-page & {
+        z-index: 0;
+    }
 }
