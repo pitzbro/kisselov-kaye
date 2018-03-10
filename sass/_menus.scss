@@ -23,6 +23,10 @@
     }
 }
 
+body.i18n-he aside.region-menu div[class$="-all"] {
+    order: 0;
+}
+
 .region-menu {
     div[class$="-all"] {
         order: 1;

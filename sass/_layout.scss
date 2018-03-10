@@ -1,31 +1,15 @@
-/*------------Admin CSS---------*/
-
-html body.admin-menu {
-    margin-top: 0 !important;
-}
-
-.admin-menu-processed {
-    font-size: 12px !important;
-}
-
 /*-------------Layout---------------*/
-
-.tabs {
-    position: relative;
-    z-index: 200;
-}
 
 div.messages {
     margin: 6px 40px;
 }
 
-// .section {
-//     position: relative;
-//     z-index: 0;
-//     &:not(.section-content) {
-//         z-index: 1;
-//     }
-// }
+.container-24 .suffix-1.prefix-1 {
+    padding: 0 40px;
+    @include for-narrow-layout {
+        padding: 0 30px;
+    }
+}
 
 /*-----Header Region------*/
 
@@ -64,6 +48,10 @@ header.section {
 /*-----Content Region------*/
 
 .zone-content {
+
+    .region-content-inner {
+        position: relative;
+    }
     a#main-content {
         display: none;
     }
@@ -91,10 +79,9 @@ header.section {
 
 .side-image {
     flex: 0 0 190px;
-    margin-right: 10px;
+    margin: 0 10px 0 0;
     img {
-        position: fixed;
-        width: 190px;
+        width: 180px;
     }
 }
 
@@ -139,7 +126,12 @@ header.section {
 }
 
 .container-24 .region-sidebar-second.grid-24 {
-    @include sidebar(920px);
+    @include for-normal-layout {
+        @include sidebar(920px);
+    }
+    @include for-narrow-layout {
+        @include sidebar(677px);
+    }
 }
 
 /*-----  Footer ------*/

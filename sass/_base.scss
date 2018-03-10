@@ -26,6 +26,11 @@ a, a:link, a:visited {
   color: inherit;
 }
 
+b, strong {
+  font-family: $font-main-bold;
+  font-weight: normal;
+}
+
 h1, h2, h3, h4, h5, h6 {
     font-family: $font-main-bold;
     line-height: 1.3;
@@ -41,6 +46,9 @@ h1 {
 img:not(.admin-menu-icon) {
   width: 100%;
   height: auto;
+  .fixed-image & {
+    position: fixed;
+  }
 }
 
 button, select {

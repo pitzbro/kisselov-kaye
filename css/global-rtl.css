@@ -7,3 +7,14 @@
 
 /*--------------------Global---------------------*/
 /*--------------------Layout------------------*/
+.side-image {
+  margin: 0 0 0 10px; }
+
+/*--------------------Project Gallery------------------*/
+.project-gallery .views-slideshow-controls-bottom {
+  left: auto;
+  right: -60px; }
+
+.project-gallery .project-info {
+  left: auto;
+  right: -60px; }

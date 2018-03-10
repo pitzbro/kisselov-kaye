@@ -42,6 +42,9 @@
 .block {
   display: block; }
 
+.site-block {
+  margin-bottom: 30px; }
+
 .relative {
   position: relative; }
 
@@ -114,6 +117,22 @@ a.more-link {
       text-decoration: none;
       background: #000; }
 
+/*------------Admin CSS---------*/
+html body.admin-menu {
+  margin-top: 0 !important; }
+
+.admin-menu-processed {
+  font-size: 12px !important; }
+
+/*-------------Layout---------------*/
+.tabs {
+  position: relative;
+  z-index: 200;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  margin: 0 !important; }
+
 * {
   box-sizing: border-box; }
 
@@ -137,6 +156,10 @@ a, a:link, a:visited {
   text-decoration: none;
   color: inherit; }
 
+b, strong {
+  font-family: "Rubik-Bold";
+  font-weight: normal; }
+
 h1, h2, h3, h4, h5, h6 {
   font-family: "Rubik-Bold";
   line-height: 1.3;
@@ -150,6 +173,8 @@ h1 {
 img:not(.admin-menu-icon) {
   width: 100%;
   height: auto; }
+  .fixed-image img:not(.admin-menu-icon) {
+    position: fixed; }
 
 button, select {
   cursor: pointer; }
@@ -204,20 +229,15 @@ abbr[title], acronym[title] {
 .field-collection-view .entity-field-collection-item {
   margin-bottom: 0.9375rem; }
 
-/*------------Admin CSS---------*/
-html body.admin-menu {
-  margin-top: 0 !important; }
-
-.admin-menu-processed {
-  font-size: 12px !important; }
-
 /*-------------Layout---------------*/
-.tabs {
-  position: relative;
-  z-index: 200; }
-
 div.messages {
   margin: 6px 40px; }
+
+.container-24 .suffix-1.prefix-1 {
+  padding: 0 40px; }
+  @media (max-width: 980px) {
+    .container-24 .suffix-1.prefix-1 {
+      padding: 0 30px; } }
 
 /*-----Header Region------*/
 header.section {
@@ -246,6 +266,8 @@ header.section {
 /*-----Content Region------*/
 .zone-content {
   margin: calc( 50vh - 257px) auto; }
+  .zone-content .region-content-inner {
+    position: relative; }
   .zone-content a#main-content {
     display: none; }
   .zone-content a, .zone-content a:link, .zone-content a:visited {
@@ -266,10 +288,9 @@ header.section {
 
 .side-image {
   flex: 0 0 190px;
-  margin-right: 10px; }
+  margin: 0 10px 0 0; }
   .side-image img {
-    position: fixed;
-    width: 190px; }
+    width: 180px; }
 
 /*-----Menu Region------*/
 .view-filters {
@@ -297,14 +318,25 @@ header.section {
   transform: rotate(-90deg);
   transform-origin: left top; }
 
-.container-24 .region-sidebar-second.grid-24 {
-  position: absolute;
-  width: 514px;
-  top: 0;
-  left: 920px;
-  line-height: 20px;
-  transform: rotate(-90deg);
-  transform-origin: left top; }
+@media (min-width: 980px) {
+  .container-24 .region-sidebar-second.grid-24 {
+    position: absolute;
+    width: 514px;
+    top: 0;
+    left: 920px;
+    line-height: 20px;
+    transform: rotate(-90deg);
+    transform-origin: left top; } }
+
+@media (max-width: 980px) {
+  .container-24 .region-sidebar-second.grid-24 {
+    position: absolute;
+    width: 514px;
+    top: 0;
+    left: 677px;
+    line-height: 20px;
+    transform: rotate(-90deg);
+    transform-origin: left top; } }
 
 /*-----  Footer ------*/
 footer.section {
@@ -337,7 +369,7 @@ footer.section {
   width: 800px !important;
   height: 514px !important; }
 
-.gallery-page img {
+.gallery-page .field-collection-item-field-project-item img {
   width: auto;
   float: right; }
 
@@ -453,6 +485,9 @@ footer.section {
   .main-menu a.active {
     font-family: "Rubik-Bold"; }
 
+body.i18n-he aside.region-menu div[class$="-all"] {
+  order: 0; }
+
 .region-menu div[class$="-all"] {
   order: 1; }
 
@@ -476,13 +511,31 @@ footer.section {
 
 /* Components */
 .logo-block {
-  text-align: end;
+  text-align: right;
   position: fixed;
   right: 0;
   padding: 10px;
   font-size: 0.6875rem; }
   .logo-block .logo {
     width: 30px; }
+
+.block-locale {
+  position: fixed;
+  left: 0;
+  padding: 20px;
+  font-size: 0.875rem; }
+  .block-locale ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none; }
+    .block-locale ul li {
+      display: inline; }
+      .block-locale ul li.active {
+        font-family: "Rubik-Bold"; }
+        .block-locale ul li.active a {
+          cursor: default; }
+      .block-locale ul li:not(:last-child)::after {
+        content: " | "; }
 
 footer .contact-block {
   position: fixed;
