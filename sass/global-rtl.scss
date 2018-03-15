@@ -30,3 +30,21 @@ html {
     left: auto;
     right: -60px;
 }
+
+.gallery-page {
+    .field-collection-item-field-project-item img {
+        float: left;
+    }
+}
+
+.project-gallery .gallery-text {
+    float: left;
+}
+
+/*------- Download Links ---------*/
+
+.download-file {
+    img:not(.admin-menu-icon) {
+      margin: 0 0 0 5px;
+    }
+  }

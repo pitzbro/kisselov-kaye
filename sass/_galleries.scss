@@ -6,6 +6,10 @@
         background: rgba(255, 255, 255, 0.5);
         width: 100%;
         left: 0;
+
+        z-index: 200;
+        margin: 0 !important;
+        
         ul.primary {
             margin: 0;
         }

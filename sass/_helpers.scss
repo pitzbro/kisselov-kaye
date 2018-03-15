@@ -5,7 +5,7 @@
 }
 
 .site-block {
-  margin-bottom: 30px;
+  margin-bottom: rem(20px);
 }
 
 .relative {
@@ -19,6 +19,16 @@
   top: 0;
   left:0;
   z-index: -1;
+}
+
+/*------- Download Links ---------*/
+
+.download-file {
+  color: $color-2;
+  img:not(.admin-menu-icon) {
+    width: rem(16px);
+    margin: 0 5px 0 0;
+  }
 }
 
 /*----------  Flex Helpers  ----------*/
