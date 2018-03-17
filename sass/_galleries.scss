@@ -42,6 +42,13 @@
 
     height: $content-tall-height;
     position: relative;
+    
+    .full-gallery {
+        height: $content-tall-height;
+        background-size: contain;
+        background-position: right;
+        background-repeat: no-repeat;
+    }
 
     .widget_pager_bottom  {
         position: relative;

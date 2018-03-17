@@ -383,6 +383,11 @@ footer.section {
 .project-gallery {
   height: 514px;
   position: relative; }
+  .project-gallery .full-gallery {
+    height: 514px;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat; }
   .project-gallery .widget_pager_bottom {
     position: relative;
     z-index: 200;
@@ -443,12 +448,29 @@ footer.section {
   grid-auto-rows: 168px;
   grid-gap: 5px 5px; }
 
-.image-grid-view .grid-item a {
-  display: block; }
-  .image-grid-view .grid-item a img {
-    filter: grayscale(100%); }
-  .image-grid-view .grid-item a:hover img {
-    filter: grayscale(0%); }
+.image-grid-view .grid-item {
+  overflow: hidden; }
+  .image-grid-view .grid-item:hover {
+    overflow: visible; }
+  .image-grid-view .grid-item a {
+    display: block;
+    height: 100%; }
+    .image-grid-view .grid-item a::after {
+      display: none; }
+    .image-grid-view .grid-item a .limiter {
+      display: block;
+      width: 100%;
+      height: 100%;
+      overflow: hidden; }
+    .image-grid-view .grid-item a img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      transform: scale(1.8); }
+    .image-grid-view .grid-item a img:not(:first-child) {
+      display: none; }
+    .image-grid-view .grid-item a:hover img {
+      display: block; }
 
 /*----------------Thumbnail Grids-----------------*/
 .thumbnail-grid-view {
