@@ -41,6 +41,7 @@
 
             img:not(:first-child) {
                 display: none;
+                background: #fff;
             }
 
             &:hover {

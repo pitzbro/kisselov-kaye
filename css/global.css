@@ -468,7 +468,8 @@ footer.section {
       left: 0;
       transform: scale(1.8); }
     .image-grid-view .grid-item a img:not(:first-child) {
-      display: none; }
+      display: none;
+      background: #fff; }
     .image-grid-view .grid-item a:hover img {
       display: block; }
 
