@@ -9,10 +9,10 @@
 
 /*--------------------Global---------------------*/
 
-html {
+// html {
     // font-family: $hebrew-font, Arial, Helvetica, sans-serif;
     // font-size: 18px;
-}
+// }
 
 /*--------------------Layout------------------*/
 
@@ -39,6 +39,10 @@ html {
 
 .project-gallery .gallery-text {
     float: left;
+}
+
+.project-gallery .full-gallery {
+    background-position: left;
 }
 
 /*------- Download Links ---------*/

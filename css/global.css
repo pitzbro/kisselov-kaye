@@ -384,10 +384,14 @@ footer.section {
   height: 514px;
   position: relative; }
   .project-gallery .full-gallery {
-    height: 514px;
+    height: 100%;
+    width: 100%;
     background-size: contain;
     background-position: right;
-    background-repeat: no-repeat; }
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0; }
   .project-gallery .widget_pager_bottom {
     position: relative;
     z-index: 200;

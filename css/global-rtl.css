@@ -25,6 +25,9 @@
 .project-gallery .gallery-text {
   float: left; }
 
+.project-gallery .full-gallery {
+  background-position: left; }
+
 /*------- Download Links ---------*/
 .download-file img:not(.admin-menu-icon) {
   margin: 0 0 0 5px; }
