@@ -52,6 +52,7 @@
         position: absolute;
         top: 0;
         left: 0;
+        z-index: -1;
     }
 
     .widget_pager_bottom  {
@@ -64,13 +65,28 @@
         position: absolute;
         top: 60px;
         left: -60px;
-        width: 180px;
+        width: 280px;
     }
 
     .gallery-text {
-        width: 660px;
         float: right;
-        padding-top: 60px;
+        max-height: 440px;
+        overflow-y: scroll;
+        padding: 60px 20px 0 240px;
+
+        &::-webkit-scrollbar {
+            width: 5px;
+        }
+        
+        &::-webkit-scrollbar-track {
+            background: #fff;
+            border-right: solid 5px transparent;
+        }
+        
+        &::-webkit-scrollbar-thumb {
+            background: #000;
+            border-radius: 5px; 
+        }
     }
 
     .views_slideshow_cycle_main {

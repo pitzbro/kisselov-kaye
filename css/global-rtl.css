@@ -23,7 +23,8 @@
   float: left; }
 
 .project-gallery .gallery-text {
-  float: left; }
+  float: left;
+  padding: 60px 240px 0 20px; }
 
 .project-gallery .full-gallery {
   background-position: left; }

@@ -39,6 +39,12 @@
 /* Breakpoint mixins */
 /* Size Functions */
 /* Pager Functions */
+@keyframes fade {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 .block {
   display: block; }
 
@@ -168,6 +174,9 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 2.375rem; }
+
+p {
+  margin-bottom: 0.5rem; }
 
 img:not(.admin-menu-icon) {
   width: 100%;
@@ -381,7 +390,8 @@ footer.section {
     background-repeat: no-repeat;
     position: absolute;
     top: 0;
-    left: 0; }
+    left: 0;
+    z-index: -1; }
   .project-gallery .widget_pager_bottom {
     position: relative;
     z-index: 200;
@@ -390,11 +400,20 @@ footer.section {
     position: absolute;
     top: 60px;
     left: -60px;
-    width: 180px; }
+    width: 280px; }
   .project-gallery .gallery-text {
-    width: 660px;
     float: right;
-    padding-top: 60px; }
+    max-height: 440px;
+    overflow-y: scroll;
+    padding: 60px 20px 0 240px; }
+    .project-gallery .gallery-text::-webkit-scrollbar {
+      width: 5px; }
+    .project-gallery .gallery-text::-webkit-scrollbar-track {
+      background: #fff;
+      border-right: solid 5px transparent; }
+    .project-gallery .gallery-text::-webkit-scrollbar-thumb {
+      background: #000;
+      border-radius: 5px; }
   .project-gallery .views_slideshow_cycle_main {
     position: relative;
     z-index: 10; }
