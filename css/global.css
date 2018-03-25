@@ -39,11 +39,26 @@
 /* Breakpoint mixins */
 /* Size Functions */
 /* Pager Functions */
-@keyframes fade {
-  0% {
+@keyframes fadein {
+  from {
     opacity: 0; }
-  100% {
+  to {
     opacity: 1; } }
+
+.delay-1 {
+  animation-delay: 0s; }
+
+.delay-2 {
+  animation-delay: 0.2s; }
+
+.delay-3 {
+  animation-delay: 0.4s; }
+
+.delay-4 {
+  animation-delay: 0.6s; }
+
+.delay-5 {
+  animation-delay: 0.8s; }
 
 .block {
   display: block; }
@@ -145,7 +160,8 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
   outline: none; }
 
 body {
-  font-family: "Rubik-Regular", Arial, Helvetica, sans-serif; }
+  font-family: "Rubik-Regular", Arial, Helvetica, sans-serif;
+  line-height: 1; }
 
 ::-moz-selection {
   /* Code for Firefox */
@@ -275,6 +291,7 @@ header.section {
 
 /*-----Content Region------*/
 .zone-content {
+  line-height: 1.6;
   margin: calc( 50vh - 257px) auto; }
   .zone-content .region-content-inner {
     position: relative; }
@@ -414,7 +431,7 @@ footer.section {
     .project-gallery .gallery-text::-webkit-scrollbar-thumb {
       background: #000;
       border-radius: 5px; }
-  .project-gallery .views_slideshow_cycle_main {
+  .project-gallery .views_slideshow_cycle_main {s
     position: relative;
     z-index: 10; }
   .project-gallery .views-slideshow-controls-top {
@@ -461,6 +478,16 @@ footer.section {
   grid-auto-rows: 168px;
   grid-gap: 5px 5px; }
 
+.image-grid-view .prize-icon {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  margin: 5px;
+  background-image: url("../images/svg/winnerIcon.svg"); }
+
 .image-grid-view .grid-item {
   overflow: hidden; }
   .image-grid-view .grid-item:hover {
@@ -489,6 +516,16 @@ footer.section {
       top: 0;
       left: 0;
       transform: scale(1.8); }
+
+.grid-image-animation .grid-item {
+  opacity: 0;
+  animation-name: fadein;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  animation-play-state: paused; }
+
+.grid-image-animation .grid-item.animate {
+  animation-play-state: running; }
 
 /*----------------Thumbnail Grids-----------------*/
 .thumbnail-grid-view {

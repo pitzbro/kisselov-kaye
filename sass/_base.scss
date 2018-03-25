@@ -8,6 +8,7 @@ button:focus, button:active, input:focus, input:active, select:focus, select:act
 
 body {
   font-family: $font-main-normal, Arial, Helvetica, sans-serif;
+  line-height: 1;
 }
 
 ::-moz-selection { /* Code for Firefox */
