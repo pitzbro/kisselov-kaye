@@ -29,6 +29,10 @@
 .project-gallery .full-gallery {
   background-position: left; }
 
+.image-grid-view .prize-icon {
+  right: auto;
+  left: 0; }
+
 /*------- Download Links ---------*/
 .download-file img:not(.admin-menu-icon) {
   margin: 0 0 0 5px; }

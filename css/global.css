@@ -431,7 +431,7 @@ footer.section {
     .project-gallery .gallery-text::-webkit-scrollbar-thumb {
       background: #000;
       border-radius: 5px; }
-  .project-gallery .views_slideshow_cycle_main {s
+  .project-gallery .views_slideshow_cycle_main {
     position: relative;
     z-index: 10; }
   .project-gallery .views-slideshow-controls-top {
