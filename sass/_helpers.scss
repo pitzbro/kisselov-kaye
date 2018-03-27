@@ -24,9 +24,12 @@
 /*------- Download Links ---------*/
 
 .download-file {
-  color: $color-2;
+  line-height: 25px;
   img:not(.admin-menu-icon) {
-    width: rem(16px);
+    background: #fff;
+    border-radius: 51%;
+    padding: 4px;
+    width: 25px;
     margin: 0 5px 0 0;
   }
 }

@@ -80,9 +80,12 @@
 
 /*------- Download Links ---------*/
 .download-file {
-  color: #B0B0B0; }
+  line-height: 25px; }
   .download-file img:not(.admin-menu-icon) {
-    width: 1rem;
+    background: #fff;
+    border-radius: 51%;
+    padding: 4px;
+    width: 25px;
     margin: 0 5px 0 0; }
 
 /*----------  Flex Helpers  ----------*/
