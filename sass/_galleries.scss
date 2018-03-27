@@ -17,9 +17,9 @@
     header.section, footer.section {
         background: transparent;
     }
-    .container-24 .prefix-1.region-content {
-        padding-left: rem(100px);
-    }
+    // .container-24 .prefix-1.region-content {
+    //     padding-left: rem(100px);
+    // }
 
     .views-slideshow-cycle-main-frame-row {
         width: 800px !important;
@@ -66,6 +66,14 @@
         top: 60px;
         left: -60px;
         width: 280px;
+        text-shadow: $text-shadow;
+        &::-moz-selection { /* Code for Firefox */
+            text-shadow: none !important;
+        }
+        
+        &::selection {
+            text-shadow: none !important;
+        }
     }
 
     .gallery-text {
@@ -130,13 +138,17 @@
         z-index: 20;
         bottom: 20px;
         left: -60px;
+        text-shadow: $text-shadow;
+
+        a:hover {
+            color: #000;
+        }
     }
 
     .views-slideshow-pager-fields > div {
-        color: $color-2;
 
         &.active {
-            color: $color-1;
+            font-family: $font-main-bold;
         }
 
     }

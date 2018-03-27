@@ -14,11 +14,13 @@ body {
 ::-moz-selection { /* Code for Firefox */
     color: #fff;
     background: $color-3;
+    text-shadow: none;
 }
 
 ::selection {
     color: #fff;
     background: $color-3;
+    text-shadow: none;
 }
 
 a, a:link, a:visited {
