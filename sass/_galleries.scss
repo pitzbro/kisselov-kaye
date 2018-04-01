@@ -22,7 +22,7 @@
     // }
 
     .views-slideshow-cycle-main-frame-row {
-        width: 800px !important;
+        width: 940px !important;
         height: 514px !important;
     }
 
@@ -38,6 +38,10 @@
     text-decoration: none;
 }
 
+.gallery-item {
+    display: flex;
+}
+
 .project-gallery {
 
     height: $content-tall-height;
@@ -45,9 +49,9 @@
     
     .full-gallery {
         height: 100%;
-        width: 100%;
+        width: 780px;
         background-size: contain;
-        background-position: right;
+        background-position: right top;
         background-repeat: no-repeat;
         position: absolute;
         top: 0;
@@ -62,10 +66,8 @@
     }
 
     .project-info {
-        position: absolute;
-        top: 60px;
-        left: -60px;
-        width: 280px;
+        flex: 0 0 160px;
+        padding: 0 20px 0 0;
         text-shadow: $text-shadow;
         &::-moz-selection { /* Code for Firefox */
             text-shadow: none !important;
@@ -77,10 +79,9 @@
     }
 
     .gallery-text {
-        float: right;
         max-height: 440px;
-        overflow-y: scroll;
-        padding: 60px 20px 0 240px;
+        overflow-y: auto;
+        padding: 10px 30px 0 0;
 
         &::-webkit-scrollbar {
             width: 5px;
@@ -88,7 +89,8 @@
         
         &::-webkit-scrollbar-track {
             background: #fff;
-            border-right: solid 5px transparent;
+            border-color: $color-2;
+            // border-right: solid 5px transparent;
         }
         
         &::-webkit-scrollbar-thumb {
@@ -103,41 +105,47 @@
     }
 
     .views-slideshow-controls-top  {
-        position: absolute;
-        z-index: 20;
-        bottom: 0;
-        left: -60px;
         a {
-            color: $color-2;
-            &:hover {
-                color: $color-1;
+            display: block;
+            text-indent: -9999px;
+            overflow: hidden;
+            height: 50px;
+            width: 50px;
+            position: fixed;
+            top: 50%;
+            margin-top: -25px;
+            z-index: 20;
+
+            &[rel='next'] {
+                background-image: url(../images/next.png);
+                right: 0;
+                background-repeat: no-repeat;
+                background-position: 15px center;
+                border-radius: 50% 0 0 50%;
             }
-            &:after {
-                display: none;
+            &[rel='prev'] {
+                background-image: url(../images/pre.png);
+                left: 0;
+                background-repeat: no-repeat;
+                background-position: 15px center;
+                border-radius: 0 50% 50% 0;
             }
+
+
         }
         
         .views-slideshow-controls-text-pause {
             display: none;
         }
-        
-        .views-slideshow-controls-text-previous {
-            @include pager-arrow("<");
-
-        }
-        
-        .views-slideshow-controls-text-next {
-            @include pager-arrow(">");
- 
-        }
 
     }
 
     .views-slideshow-controls-bottom  {
-        position: absolute;
-        z-index: 20;
-        bottom: 20px;
-        left: -60px;
+        // position: absolute;
+        // z-index: 20;
+        // bottom: 20px;
+        // left: -60px;
+        padding: 10px 0;
         text-shadow: $text-shadow;
 
         a:hover {

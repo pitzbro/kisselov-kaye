@@ -35,8 +35,8 @@ $narrow-breakpoint: 980px;
 /* Pager Functions */
 
 @mixin pager-arrow($inner-text) {
-  // display: inline-block;
-  // overflow: hidden;
+  display: block;
+  overflow: hidden;
   text-indent: -9999px;
   &::after {
     content: $inner-text;

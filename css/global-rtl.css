@@ -11,23 +11,17 @@
   margin: 0 0 0 10px; }
 
 /*--------------------Project Gallery------------------*/
-.project-gallery .views-slideshow-controls-bottom {
-  left: auto;
-  right: -60px; }
+.project-gallery .gallery-text {
+  padding: 10px 0 0 30px; }
 
 .project-gallery .project-info {
-  left: auto;
-  right: -60px; }
+  padding: 0 0 0 20px; }
 
 .gallery-page .field-collection-item-field-project-item img {
   float: left; }
 
-.project-gallery .gallery-text {
-  float: left;
-  padding: 60px 240px 0 20px; }
-
 .project-gallery .full-gallery {
-  background-position: left; }
+  background-position: left top; }
 
 .image-grid-view .prize-icon {
   right: auto;
