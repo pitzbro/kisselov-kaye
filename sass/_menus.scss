@@ -32,17 +32,17 @@ ul li.expanded {
     top: 60px;
     left: 0;
     width: 100%;
-    z-index: 300;
+    z-index: 200;
     background: #fff;
-    overflow: hidden;
+    overflow-y: auto;
+    font-size: 1.125rem;
+    max-height: calc( 100vh - 60px);
+    overflow-y: auto;
+    transition: transform .6s;
+    transform: translate(0, -100%);
     
-    font-size: rem(18px);
-    
-    max-height: 0;
-    transition: max-height .6s;
-
     &.open {
-        max-height: calc( 100vh - 60px );
+        transform: translate(0, 0);
     }
 
     .content {
@@ -54,7 +54,7 @@ ul li.expanded {
         padding: 6px 0;
         position: static;
         background: transparent;
-        max-height: unset;
+        transform: translate(0, 0);
         .content {
             padding: 0;
         }
@@ -118,7 +118,7 @@ ul li.expanded {
     }
 }
 
-.construction .main-menu a.active {
+.construction .main-menu ul.menu a.active {
     font-family: $font-main-normal;
     color: $color-2;
 }

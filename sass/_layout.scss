@@ -43,6 +43,10 @@ header.section {
         text-overflow: ellipsis;
         max-width: 400px;
         font-size: rem(20px);
+
+        position: relative;
+        z-index: 400;
+        
         @include for-normal-layout {
             font-size: rem(38px);
         }
@@ -54,6 +58,14 @@ header.section {
         .region-header-first {
             position: fixed;
             z-index: 300;
+            width: 100%;
+            height: 60px;
+            background: #fff;
+
+            @include for-normal-layout {
+                background: transparent;
+                height: auto;
+            }
         }
         .region-header-second {
 
@@ -81,9 +93,11 @@ header.section {
     line-height: 1.63;
 
     margin: 60px 0 0 0;
+    padding-bottom: 40px;
     
     @include for-normal-layout {
         margin: $header-footer-tall-height auto;
+        padding-bottom: 0;
     }
 
     .region-content-inner {

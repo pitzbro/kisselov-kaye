@@ -16,7 +16,7 @@
 /*--------------------Project Gallery------------------*/
 @media (min-width: 980px) {
   .project-gallery .gallery-text {
-    padding: 10px 0 0 30px; } }
+    padding: 0 0 0 30px; } }
 
 .project-gallery .project-info {
   padding: 0 0 0 20px; }
@@ -29,6 +29,16 @@
   @media (max-width: 980px) {
     .project-gallery .full-gallery {
       background-position: center; } }
+
+.project-gallery .views-slideshow-controls-top a[rel='next'] {
+  background-image: url(../images/pre.png);
+  right: auto;
+  left: 0; }
+
+.project-gallery .views-slideshow-controls-top a[rel='prev'] {
+  background-image: url(../images/next.png);
+  left: auto;
+  right: 0; }
 
 .image-grid-view .prize-icon {
   right: auto;

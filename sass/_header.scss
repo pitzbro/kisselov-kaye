@@ -69,10 +69,11 @@
   height: 60px;
   padding: 22px 20px;
   background: #fff;
-  display: block;
-  // display: flex;
-  // flex-direction: column;
-  // justify-content: space-between;
+  
+  @include for-normal-layout {
+    display: none;
+  }
+
   .lines {
     display: block;
     position: relative;

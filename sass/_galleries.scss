@@ -47,6 +47,17 @@
 .gallery-item {
     @include for-normal-layout {
         display: flex;
+        .field-collection-item-field-project-item  {
+            flex: 1;
+            height: 514px;
+            width: 780px;
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            .embedded-video {
+                width: 100%;
+            }
+        }
     }
 }
 
@@ -59,6 +70,7 @@
         @include for-gallery-spreaded-layout {
             width: 100% !important;
             height: auto !important;
+            margin-bottom: 40px;
         }
     }
     
@@ -115,7 +127,7 @@
         @include for-normal-layout {
             max-height: 440px;
             overflow-y: auto;
-            padding: 10px 30px 0 0;
+            padding: 0 30px 0 0;
         }
 
         &::-webkit-scrollbar {

@@ -121,7 +121,14 @@
 }
 
 .column-grid {
-    column-count: 5;
+    column-count: 2;
     column-gap: 20px;
     padding-top: 10px;
+    
+    @include for-narrow-layout {
+        column-count: 4;
+    }
+    @include for-normal-layout {
+        column-count: 5;
+    }
 }

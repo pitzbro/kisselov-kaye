@@ -303,7 +303,9 @@ header.section {
     overflow: hidden;
     text-overflow: ellipsis;
     max-width: 400px;
-    font-size: 1.25rem; }
+    font-size: 1.25rem;
+    position: relative;
+    z-index: 400; }
     @media (min-width: 980px) {
       header.section h1 {
         font-size: 2.375rem; } }
@@ -312,7 +314,14 @@ header.section {
     display: flex; }
     header.section .zone-header .region-header-first {
       position: fixed;
-      z-index: 300; }
+      z-index: 300;
+      width: 100%;
+      height: 60px;
+      background: #fff; }
+      @media (min-width: 980px) {
+        header.section .zone-header .region-header-first {
+          background: transparent;
+          height: auto; } }
     header.section .zone-header .region-header-second {
       padding: 0 40px;
       width: 100%; }
@@ -329,10 +338,12 @@ header.section {
 /*-----Content Region------*/
 .zone-content {
   line-height: 1.63;
-  margin: 60px 0 0 0; }
+  margin: 60px 0 0 0;
+  padding-bottom: 40px; }
   @media (min-width: 980px) {
     .zone-content {
-      margin: calc( 50vh - 257px) auto; } }
+      margin: calc( 50vh - 257px) auto;
+      padding-bottom: 0; } }
   .zone-content .region-content-inner {
     position: relative; }
   .zone-content a#main-content {
@@ -440,7 +451,16 @@ header.section {
 
 @media (min-width: 980px) {
   .gallery-item {
-    display: flex; } }
+    display: flex; }
+    .gallery-item .field-collection-item-field-project-item {
+      flex: 1;
+      height: 514px;
+      width: 780px;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center; }
+      .gallery-item .field-collection-item-field-project-item .embedded-video {
+        width: 100%; } }
 
 .project-gallery {
   height: 514px;
@@ -448,7 +468,8 @@ header.section {
   @media (max-width: 980px) {
     .project-gallery .views-slideshow-cycle-main-frame {
       width: 100% !important;
-      height: auto !important; } }
+      height: auto !important;
+      margin-bottom: 40px; } }
   .project-gallery .full-gallery {
     height: 100%;
     width: 780px;
@@ -483,7 +504,7 @@ header.section {
     .project-gallery .gallery-text {
       max-height: 440px;
       overflow-y: auto;
-      padding: 10px 30px 0 0; } }
+      padding: 0 30px 0 0; } }
   .project-gallery .gallery-text::-webkit-scrollbar {
     width: 5px; }
   .project-gallery .gallery-text::-webkit-scrollbar-track {
@@ -621,9 +642,15 @@ header.section {
   margin: 20px 0 8px; }
 
 .column-grid {
-  column-count: 5;
+  column-count: 2;
   column-gap: 20px;
   padding-top: 10px; }
+  @media (min-width: 740px) {
+    .column-grid {
+      column-count: 4; } }
+  @media (min-width: 980px) {
+    .column-grid {
+      column-count: 5; } }
 
 .side-menu-first, .side-menu-second {
   display: none; }
@@ -650,14 +677,16 @@ ul li.expanded {
   top: 60px;
   left: 0;
   width: 100%;
-  z-index: 300;
+  z-index: 200;
   background: #fff;
-  overflow: hidden;
+  overflow-y: auto;
   font-size: 1.125rem;
-  max-height: 0;
-  transition: max-height .6s; }
+  max-height: calc( 100vh - 60px);
+  overflow-y: auto;
+  transition: transform .6s;
+  transform: translate(0, -100%); }
   .main-menu.open {
-    max-height: calc( 100vh - 60px); }
+    transform: translate(0, 0); }
   .main-menu .content {
     padding: 30px 0; }
   @media (min-width: 980px) {
@@ -666,7 +695,7 @@ ul li.expanded {
       padding: 6px 0;
       position: static;
       background: transparent;
-      max-height: unset; }
+      transform: translate(0, 0); }
       .main-menu .content {
         padding: 0; } }
   .main-menu ul.menu {
@@ -706,7 +735,7 @@ ul li.expanded {
       .main-menu ul.menu a.active {
         font-family: "Rubik-Bold"; }
 
-.construction .main-menu a.active {
+.construction .main-menu ul.menu a.active {
   font-family: "Rubik-Regular";
   color: #B0B0B0; }
 
@@ -803,8 +832,10 @@ body.i18n-he aside.region-menu div[class$="-all"] {
   width: 60px;
   height: 60px;
   padding: 22px 20px;
-  background: #fff;
-  display: block; }
+  background: #fff; }
+  @media (min-width: 980px) {
+    .hamburger-btn {
+      display: none; } }
   .hamburger-btn .lines {
     display: block;
     position: relative;
@@ -841,6 +872,6 @@ footer .contact-block {
   bottom: 0;
   width: 20px;
   margin: 20px;
-  z-index: 300; }
+  z-index: 150; }
 
 /* Pages */
