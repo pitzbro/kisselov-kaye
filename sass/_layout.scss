@@ -14,13 +14,22 @@ div.messages {
 
 header.section {
     width: 100%;
-    height: $header-footer-tall-height;
     background: #fff;
     position: fixed;
     left: 0;
     top: 0;
-    padding-bottom: 30px;
     z-index: 300;
+
+    .gallery-page & {
+        @include for-normal-layout {
+            background: transparent;
+        }
+    }
+    
+    @include for-normal-layout {
+        height: $header-footer-tall-height;
+        padding-bottom: 30px;
+    }
 
     body.admin-menu & {
         padding-top: 30px;
@@ -33,6 +42,10 @@ header.section {
         overflow: hidden;
         text-overflow: ellipsis;
         max-width: 400px;
+        font-size: rem(20px);
+        @include for-normal-layout {
+            font-size: rem(38px);
+        }
     }
 
     .zone-header {
@@ -40,9 +53,18 @@ header.section {
         display: flex;
         .region-header-first {
             position: fixed;
+            z-index: 300;
         }
         .region-header-second {
-            align-self: flex-end;
+
+            padding: 0 40px;
+            width: 100%;
+
+            @include for-normal-layout {
+                align-self: flex-end;
+                padding: 0;
+                width: 100%;
+            }
         }
     }
     .region-header-second-inner {
@@ -58,28 +80,21 @@ header.section {
 
     line-height: 1.63;
 
+    margin: 60px 0 0 0;
+    
+    @include for-normal-layout {
+        margin: $header-footer-tall-height auto;
+    }
+
     .region-content-inner {
         position: relative;
     }
     a#main-content {
         display: none;
     }
-    margin: $header-footer-tall-height auto;
     a, a:link, a:visited {
         display: inline-block;
         position: relative;
-        // &::after {
-        //     content: "";
-        //     display: block;
-        //     position: absolute;
-        //     width: 0;
-        //     height: 1px;
-        //     background: $color-2;
-        //     transition: width .3s;
-        // }
-        // &:hover::after {
-        //     width: 100%;
-        // }
         &:hover {
             color: $color-2;
         }

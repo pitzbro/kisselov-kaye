@@ -57,6 +57,14 @@
     left: 0;
 }
 
+ul li.expanded {
+
+    .toggle-sub-menu {
+        right: auto;
+        left: 0;
+    }
+}
+
 /*------- Download Links ---------*/
 
 .download-file {

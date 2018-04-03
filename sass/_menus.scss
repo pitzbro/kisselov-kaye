@@ -7,6 +7,21 @@ ul li.expanded {
     list-style-image: none;
     padding: inherit;
     margin: inherit;
+    position: relative;
+
+    .toggle-sub-menu {
+
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: rem(20px);
+        padding: 0 15px;
+        line-height: rem(26px);
+
+        @include for-normal-layout {
+            display: none;
+        }
+    }
 }
 
 // Main Menu
@@ -14,22 +29,35 @@ ul li.expanded {
 .main-menu {
     
     position: fixed;
-    top: 80px;
+    top: 60px;
     left: 0;
     width: 100%;
     z-index: 300;
     background: #fff;
-    padding: 6px 0;
-    height: 0;
     overflow: hidden;
     
     font-size: rem(18px);
     
+    max-height: 0;
+    transition: max-height .6s;
+
+    &.open {
+        max-height: calc( 100vh - 60px );
+    }
+
+    .content {
+        padding: 30px 0;
+    }
+    
     @include for-normal-layout {
         width: 500px;
+        padding: 6px 0;
         position: static;
         background: transparent;
-        height: auto;
+        max-height: unset;
+        .content {
+            padding: 0;
+        }
     }
 
 
@@ -50,6 +78,20 @@ ul li.expanded {
             @include for-normal-layout {
                 display: none;
             }
+
+            overflow: hidden;
+            padding: 0 20px;
+            font-size: rem(16px);
+            max-height: 0;
+            transition: max-height .6s;
+
+            &.open {
+                max-height: 100vh;
+            }
+
+            a {
+                font-family: $font-main-normal;
+            }
         }
 
         li.leaf {
@@ -60,9 +102,11 @@ ul li.expanded {
 
         a {
             display: block;
-            padding: 5px 20px;
+            padding: 10px 20px;
+            font-family: $font-main-bold;
     
             @include for-normal-layout {
+                font-family: $font-main-normal;
                 display: inline;
                 padding: 0;
             }

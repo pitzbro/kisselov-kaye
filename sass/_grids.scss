@@ -90,11 +90,20 @@
 
 .thumbnail-grid-view {
     display: grid;
-    grid-template-columns: repeat(7, 116px);
+    grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 116px;
     grid-gap: 8px 8px;
     justify-items: center;
     align-items: center;
+    
+    @include for-narrow-layout {
+        // grid-auto-rows: 116px;
+        grid-template-columns: repeat(5, 1fr);
+    }
+    @include for-normal-layout {
+        // grid-auto-rows: 116px;
+        grid-template-columns: repeat(7, 1fr);
+    }
 }
 
 

@@ -95,7 +95,7 @@ button, .btn a {
 }
 
 button:focus, button:active, input:focus, input:active, select:focus, select:active, textarea:focus, textarea:active {
-  box-shadow: $color-3;
+  box-shadow: none;
   z-index: 1;
 }
 

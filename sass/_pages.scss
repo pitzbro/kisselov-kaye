@@ -1,0 +1,12 @@
+/*------ Contact -------------*/
+
+.node-contact-page {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+    @include for-normal-layout {
+        flex-direction: row;
+        align-items: center;
+    }
+}
