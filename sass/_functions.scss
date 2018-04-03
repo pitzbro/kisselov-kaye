@@ -9,8 +9,14 @@ $narrow-breakpoint: 980px;
   }
 }
 
-@mixin for-narrow-layout {
+@mixin for-gallery-spreaded-layout {
   @media (max-width: $narrow-breakpoint) {
+    @content;
+  }
+}
+
+@mixin for-narrow-layout {
+  @media (min-width: $mobile-breakpoint) {
     @content;
   }
 }

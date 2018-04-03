@@ -1,3 +1,5 @@
+@import 'functions';
+
 /*------------Admin Menu RTL Fix---------*/
 
 .admin-menu-processed .dropdown li ul {
@@ -28,7 +30,9 @@
 // }
 
 .project-gallery .gallery-text {
-    padding: 10px 0 0 30px;
+    @include for-normal-layout {
+        padding: 10px 0 0 30px;
+    }
 }
 
 .project-gallery .project-info {
@@ -43,6 +47,9 @@
 
 .project-gallery .full-gallery {
     background-position: left top;
+    @include for-gallery-spreaded-layout {
+        background-position: center;
+    }
 }
 
 .image-grid-view .prize-icon {

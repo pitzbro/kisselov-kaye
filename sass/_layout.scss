@@ -5,9 +5,8 @@ div.messages {
 }
 
 .container-24 .suffix-1.prefix-1 {
-    padding: 0 40px;
-    @include for-narrow-layout {
-        padding: 0 30px;
+    @include for-normal-layout {
+        padding: 0 40px;
     }
 }
 
@@ -107,6 +106,12 @@ header.section {
     position: relative;
     padding-top: 25px;
 
+    display: none;
+
+    @include for-normal-layout {
+        display: block;
+    }
+
     .form-item, ul.menu {
         display: flex;
         justify-content: space-between;
@@ -139,9 +144,6 @@ header.section {
     @include for-normal-layout {
         @include sidebar(920px);
     }
-    @include for-narrow-layout {
-        @include sidebar(677px);
-    }
 }
 
 .gallery-page .container-24 .suffix-1.prefix-1 {
@@ -151,13 +153,17 @@ header.section {
 /*-----  Footer ------*/
 
 footer.section {
-    width: 100%;
-    background: #fff;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    height: $header-footer-tall-height;
-    z-index: 300;
+
+    @include for-normal-layout {
+        position: fixed;
+        width: 100%;
+        background: #fff;
+        left: 0;
+        bottom: 0;
+        height: $header-footer-tall-height;
+        z-index: 300;
+    }
+
     .gallery-page & {
         z-index: 0;
     }
