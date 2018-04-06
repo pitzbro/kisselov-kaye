@@ -30,6 +30,9 @@
     
     .grid-item  {
         overflow: hidden;
+        @supports (-ms-ime-align:auto) {
+            z-index: -1;
+          }
         &:hover {
             overflow: visible;
             z-index: 200;
@@ -44,7 +47,13 @@
         }
         a {
             display: block;
+            position: relative;
             height: 100%;
+            // z-index: -1;
+
+            &:hover {
+                z-index: 200;
+            }
             
             .limiter {
                 
