@@ -38,6 +38,13 @@
     }
 }
 
+.project-info-block {
+    margin: 20px 0;
+    @include for-normal-layout {
+        display: none;
+    }
+}
+
 /*----------------Project Gallery-----------------*/
 
 .views_slideshow_controls_text span:hover {

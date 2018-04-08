@@ -134,6 +134,14 @@ abbr[title], acronym[title] {
   direction: ltr;
 }
 
+.label-inline {
+  display: inline;
+  font-family: $font-main-bold;
+  &::after {
+    content: " ";
+  }
+}
+
 /*-----------Field Collections------------*/
 
 .field-collection-container {

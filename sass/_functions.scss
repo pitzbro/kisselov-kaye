@@ -1,5 +1,7 @@
 $mobile-breakpoint: 740px;
 $narrow-breakpoint: 980px;
+$narrow-height-breakpoint: 660px;
+
 
 /* Breakpoint mixins */
 
@@ -10,7 +12,7 @@ $narrow-breakpoint: 980px;
 }
 
 @mixin for-gallery-spreaded-layout {
-  @media (max-width: $narrow-breakpoint) {
+  @media (max-width: $narrow-breakpoint), (max-height: $narrow-height-breakpoint) {
     @content;
   }
 }
@@ -22,7 +24,13 @@ $narrow-breakpoint: 980px;
 }
 
 @mixin for-normal-layout {
-  @media (min-width: $narrow-breakpoint) {
+  @media (min-width: $narrow-breakpoint) and (min-height: $narrow-height-breakpoint) { 
+    @content;
+  }
+
+}
+@mixin for-normal-layout-without-height {
+  @media (min-width: $narrow-breakpoint) { 
     @content;
   }
 }
