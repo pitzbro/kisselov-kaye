@@ -282,7 +282,7 @@ abbr[title], acronym[title] {
 div.messages {
   margin: 6px 40px; }
 
-@media (min-width: 980px) and (min-height: 660px) {
+@media (min-width: 980px) and (min-height: 550px) {
   .container-24 .suffix-1.prefix-1 {
     padding: 0 40px; } }
 
@@ -294,13 +294,13 @@ header.section {
   left: 0;
   top: 0;
   z-index: 300; }
-  @media (min-width: 980px) and (min-height: 660px) {
+  @media (min-width: 980px) and (min-height: 550px) {
     .gallery-page header.section {
       background: transparent; } }
-  @media (min-width: 980px) and (min-height: 660px) {
+  @media (min-width: 980px) and (min-height: 550px) {
     header.section {
-      height: calc( 50vh - 257px);
-      padding-bottom: 30px; } }
+      height: calc( 50vh - 213px);
+      padding-bottom: 15px; } }
   body.admin-menu header.section {
     padding-top: 30px; }
   header.section h1 {
@@ -312,7 +312,7 @@ header.section {
     font-size: 1.25rem;
     position: relative;
     z-index: 400; }
-    @media (min-width: 980px) and (min-height: 660px) {
+    @media (min-width: 980px) and (min-height: 550px) {
       header.section h1 {
         font-size: 2.375rem; } }
   header.section .zone-header {
@@ -325,14 +325,14 @@ header.section {
       height: 60px;
       background: #fff;
       left: 0; }
-      @media (min-width: 980px) and (min-height: 660px) {
+      @media (min-width: 980px) and (min-height: 550px) {
         header.section .zone-header .region-header-first {
           background: transparent;
           height: auto; } }
     header.section .zone-header .region-header-second {
       padding: 0 40px;
       width: 100%; }
-      @media (min-width: 980px) and (min-height: 660px) {
+      @media (min-width: 980px) and (min-height: 550px) {
         header.section .zone-header .region-header-second {
           align-self: flex-end;
           padding: 0;
@@ -347,9 +347,9 @@ header.section {
   line-height: 1.63;
   margin: 60px 0 0 0;
   padding-bottom: 40px; }
-  @media (min-width: 980px) and (min-height: 660px) {
+  @media (min-width: 980px) and (min-height: 550px) {
     .zone-content {
-      margin: calc( 50vh - 257px) auto;
+      margin: calc( 50vh - 213px) auto;
       padding-bottom: 0; } }
   .zone-content .region-content-inner {
     position: relative; }
@@ -375,7 +375,7 @@ header.section {
   position: relative;
   padding-top: 25px;
   display: none; }
-  @media (min-width: 980px) and (min-height: 660px) {
+  @media (min-width: 980px) and (min-height: 550px) {
     .zone-menu {
       display: block; } }
   .zone-menu .form-item, .zone-menu ul.menu {
@@ -390,17 +390,17 @@ header.section {
 /*-----Sidebar First------*/
 .container-24 .region-sidebar-first.grid-24 {
   position: absolute;
-  width: 514px;
+  width: 427px;
   top: 0;
   left: 0;
   line-height: 20px;
   transform: rotate(-90deg);
   transform-origin: left top; }
 
-@media (min-width: 980px) and (min-height: 660px) {
+@media (min-width: 980px) and (min-height: 550px) {
   .container-24 .region-sidebar-second.grid-24 {
     position: absolute;
-    width: 514px;
+    width: 427px;
     top: 0;
     left: 920px;
     line-height: 20px;
@@ -411,14 +411,14 @@ header.section {
   padding: 0; }
 
 /*-----  Footer ------*/
-@media (min-width: 980px) and (min-height: 660px) {
+@media (min-width: 980px) and (min-height: 550px) {
   footer.section {
     position: fixed;
     width: 100%;
     background: #fff;
     left: 0;
     bottom: 0;
-    height: calc( 50vh - 257px);
+    height: calc( 50vh - 213px);
     z-index: 300; } }
 
 .gallery-page footer.section {
@@ -438,7 +438,7 @@ header.section {
 .gallery-page .views-slideshow-cycle-main-frame-row {
   width: 940px !important;
   height: 514px !important; }
-  @media (max-width: 980px), (max-height: 660px) {
+  @media (max-width: 980px), (max-height: 550px) {
     .gallery-page .views-slideshow-cycle-main-frame-row {
       position: static !important;
       display: block !important;
@@ -447,14 +447,14 @@ header.section {
       width: 100% !important;
       margin-bottom: 20px; } }
 
-@media (min-width: 980px) and (min-height: 660px) {
+@media (min-width: 980px) and (min-height: 550px) {
   .gallery-page .field-collection-item-field-project-item img {
     width: auto;
     float: right; } }
 
 .project-info-block {
   margin: 20px 0; }
-  @media (min-width: 980px) and (min-height: 660px) {
+  @media (min-width: 980px) and (min-height: 550px) {
     .project-info-block {
       display: none; } }
 
@@ -462,7 +462,7 @@ header.section {
 .views_slideshow_controls_text span:hover {
   text-decoration: none; }
 
-@media (min-width: 980px) and (min-height: 660px) {
+@media (min-width: 980px) and (min-height: 550px) {
   .gallery-item {
     display: flex; }
     .gallery-item .field-collection-item-field-project-item {
@@ -476,9 +476,9 @@ header.section {
         width: 100%; } }
 
 .project-gallery {
-  height: 514px;
+  height: 427px;
   position: relative; }
-  @media (max-width: 980px), (max-height: 660px) {
+  @media (max-width: 980px), (max-height: 550px) {
     .project-gallery .views-slideshow-cycle-main-frame {
       width: 100% !important;
       height: auto !important;
@@ -493,10 +493,10 @@ header.section {
     top: 0;
     left: 0;
     z-index: -1; }
-    @media (max-width: 980px), (max-height: 660px) {
+    @media (max-width: 980px), (max-height: 550px) {
       .project-gallery .full-gallery {
         background-position: center; } }
-  @media (max-width: 980px), (max-height: 660px) {
+  @media (max-width: 980px), (max-height: 550px) {
     .project-gallery .background-image-container {
       position: static;
       height: calc(100vw - 100px);
@@ -510,10 +510,10 @@ header.section {
     order: -1;
     padding: 0 20px 0 0;
     text-shadow: 0 0 3px #ffffff, 0 0 3px #fff, 0 0 3px #ffffff, 0 0 3px #fff; }
-    @media (max-width: 980px), (max-height: 660px) {
+    @media (max-width: 980px), (max-height: 550px) {
       .project-gallery .project-info > *:not(.for-mobile) {
         display: none; } }
-  @media (min-width: 980px) and (min-height: 660px) {
+  @media (min-width: 980px) and (min-height: 550px) {
     .project-gallery .gallery-text {
       max-height: 440px;
       overflow-y: auto;
@@ -562,7 +562,7 @@ header.section {
       color: #000; }
   .project-gallery .views-slideshow-controls-top, .project-gallery .views-slideshow-controls-bottom {
     display: none; }
-    @media (min-width: 980px) and (min-height: 660px) {
+    @media (min-width: 980px) and (min-height: 550px) {
       .project-gallery .views-slideshow-controls-top, .project-gallery .views-slideshow-controls-bottom {
         display: block; } }
   .project-gallery .views-slideshow-pager-fields > div.active {
@@ -581,7 +581,8 @@ header.section {
       grid-template-columns: repeat(5, 1fr); } }
   @media (min-width: 980px) {
     .zone-content .image-grid-view .view-content {
-      grid-auto-rows: 168px; } }
+      grid-template-columns: repeat(6, 1fr);
+      grid-auto-rows: 139px; } }
 
 .zone-content .image-grid-view .prize-icon {
   width: 30px;
@@ -667,7 +668,7 @@ header.section {
   @media (min-width: 550px) {
     .thumbnail-grid-view {
       grid-template-columns: repeat(5, 1fr); } }
-  @media (min-width: 980px) and (min-height: 660px) {
+  @media (min-width: 980px) and (min-height: 550px) {
     .thumbnail-grid-view {
       grid-template-columns: repeat(7, 1fr); } }
 
@@ -685,7 +686,7 @@ header.section {
   @media (min-width: 550px) {
     .column-grid {
       column-count: 4; } }
-  @media (min-width: 980px) and (min-height: 660px) {
+  @media (min-width: 980px) and (min-height: 550px) {
     .column-grid {
       column-count: 5; } }
 
@@ -705,7 +706,7 @@ ul li.expanded {
     font-size: 1.25rem;
     padding: 0 15px;
     line-height: 1.625rem; }
-    @media (min-width: 980px) and (min-height: 660px) {
+    @media (min-width: 980px) and (min-height: 550px) {
       ul li.expanded .toggle-sub-menu {
         display: none; } }
 
@@ -726,7 +727,7 @@ ul li.expanded {
     transform: translate(0, 0); }
   .main-menu .content {
     padding: 30px 0; }
-  @media (min-width: 980px) and (min-height: 660px) {
+  @media (min-width: 980px) and (min-height: 550px) {
     .main-menu {
       width: 500px;
       padding: 6px 0;
@@ -740,7 +741,7 @@ ul li.expanded {
     justify-content: space-between;
     flex: 0 0 500px;
     flex-direction: column; }
-    @media (min-width: 980px) and (min-height: 660px) {
+    @media (min-width: 980px) and (min-height: 550px) {
       .main-menu ul.menu {
         flex-direction: row; } }
     .main-menu ul.menu ul.menu {
@@ -749,7 +750,7 @@ ul li.expanded {
       font-size: 1rem;
       max-height: 0;
       transition: max-height .6s; }
-      @media (min-width: 980px) and (min-height: 660px) {
+      @media (min-width: 980px) and (min-height: 550px) {
         .main-menu ul.menu ul.menu {
           display: none; } }
       .main-menu ul.menu ul.menu.open {
@@ -764,7 +765,7 @@ ul li.expanded {
       display: block;
       padding: 10px 20px;
       font-family: "Rubik-Bold"; }
-      @media (min-width: 980px) and (min-height: 660px) {
+      @media (min-width: 980px) and (min-height: 550px) {
         .main-menu ul.menu a {
           font-family: "Rubik-Regular";
           display: inline;
@@ -805,7 +806,7 @@ body.i18n-he aside.region-menu div[class$="-all"] {
   display: flex;
   flex-direction: column;
   align-items: flex-start; }
-  @media (min-width: 980px) and (min-height: 660px) {
+  @media (min-width: 980px) and (min-height: 550px) {
     .node-contact-page {
       flex-direction: row;
       align-items: center; } }
@@ -820,12 +821,12 @@ body.i18n-he aside.region-menu div[class$="-all"] {
   .logo-block .logo {
     width: 20px;
     margin-bottom: 5px; }
-    @media (min-width: 980px) and (min-height: 660px) {
+    @media (min-width: 980px) and (min-height: 550px) {
       .logo-block .logo {
         width: 30px; } }
   .logo-block .slogan {
     display: none; }
-    @media (min-width: 980px) and (min-height: 660px) {
+    @media (min-width: 980px) and (min-height: 550px) {
       .logo-block .slogan {
         display: block; } }
 
@@ -855,7 +856,7 @@ body.i18n-he aside.region-menu div[class$="-all"] {
     display: flex;
     align-items: center;
     justify-content: center; }
-  @media (min-width: 980px) and (min-height: 660px) {
+  @media (min-width: 980px) and (min-height: 550px) {
     .block-blockify-page-title {
       flex: initial; }
       .block-blockify-page-title .content {
@@ -870,7 +871,7 @@ body.i18n-he aside.region-menu div[class$="-all"] {
   height: 60px;
   padding: 22px 20px;
   background: #fff; }
-  @media (min-width: 980px) and (min-height: 660px) {
+  @media (min-width: 980px) and (min-height: 550px) {
     .hamburger-btn {
       display: none; } }
   .hamburger-btn .lines {

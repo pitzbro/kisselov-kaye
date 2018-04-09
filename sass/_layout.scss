@@ -28,7 +28,8 @@ header.section {
     
     @include for-normal-layout {
         height: $header-footer-tall-height;
-        padding-bottom: 30px;
+        // padding-bottom: 30px;
+        padding-bottom: 15px;
     }
 
     body.admin-menu & {
