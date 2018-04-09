@@ -1,9 +1,9 @@
 /*----------------Image Grids-----------------*/
 
-.image-grid-view {
+.zone-content .image-grid-view {
     .view-content {
         display: grid;
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-gap: 10px 10px;
         grid-auto-rows: calc( ( 100vw - 40px ) / 2 );
         
@@ -30,13 +30,19 @@
     
     .grid-item  {
         overflow: hidden;
+        display: flex;
+        
+        @include for-narrow-layout {
+            display: block;
+        }
+
         @supports (-ms-ime-align:auto) {
             z-index: -1;
           }
         &:hover {
             overflow: visible;
             z-index: 200;
-            a .limiter {
+            a.project-thumbnail .limiter {
                 opacity: 1;
                 transition: opacity .4s 0s;
                 &:first-child {
@@ -45,11 +51,12 @@
                 }
             }
         }
-        a {
+        a.project-thumbnail {
             display: block;
             position: relative;
             height: 100%;
-            // z-index: -1;
+            flex: 0 0 50%;
+
 
             &:hover {
                 z-index: 200;
@@ -80,6 +87,23 @@
 
             }
 
+        }
+    }
+
+    .mobile-project-info {
+        flex: 0 0 50%;
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        @include for-narrow-layout {
+            display: none;
+        }
+
+        h2 {
+            margin-bottom: 0;
+            font-size: rem(17px);
         }
     }
 }
