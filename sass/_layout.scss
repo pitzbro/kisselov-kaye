@@ -26,10 +26,14 @@ header.section {
         }
     }
     
-    @include for-normal-layout {
-        height: $header-footer-tall-height;
-        // padding-bottom: 30px;
+    @include for-six-column-layout {
+        height: $header-footer-tall-height-short;
         padding-bottom: 15px;
+    }
+
+    @include for-five-column-layout {
+        height: $header-footer-tall-height;
+        padding-bottom: 30px;
     }
 
     body.admin-menu & {
@@ -98,8 +102,13 @@ header.section {
     padding-bottom: 40px;
     
     @include for-normal-layout {
-        margin: $header-footer-tall-height auto;
         padding-bottom: 0;
+    }
+    @include for-six-column-layout {
+        margin: $header-footer-tall-height-short auto;
+    }
+    @include for-five-column-layout {
+        margin: $header-footer-tall-height auto;
     }
 
     .region-content-inner {
@@ -159,12 +168,19 @@ header.section {
 
 @mixin sidebar($left) {
     position: absolute;
-    width: $content-tall-height;
+    // width: $content-tall-height;
     top: 0;
     left: $left;
     line-height: 20px;
     transform: rotate(-90deg);
-    transform-origin: left top;   
+    transform-origin: left top;
+    
+    @include for-six-column-layout {
+        width: $content-tall-height-short;
+    }
+    @include for-five-column-layout {
+        width: $content-tall-height;
+    }
 }
 
 .container-24 .region-sidebar-first.grid-24 {
@@ -191,8 +207,15 @@ footer.section {
         background: #fff;
         left: 0;
         bottom: 0;
-        height: $header-footer-tall-height;
+        // height: $header-footer-tall-height;
         z-index: 300;
+    }
+
+    @include for-six-column-layout {
+        height: $header-footer-tall-height-short;
+    }
+    @include for-five-column-layout {
+        height: $header-footer-tall-height;
     }
 
     .gallery-page & {
