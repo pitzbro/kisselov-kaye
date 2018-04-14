@@ -98,9 +98,9 @@
 
     .mobile-project-info {
         flex: 0 0 50%;
-        padding: 20px;
+        padding: 0 20px;
         display: flex;
-        justify-content: center;
+        /* justify-content: center; */
         flex-direction: column;
 
         @include for-narrow-layout {

@@ -11,7 +11,7 @@
 /*--------------------Global---------------------*/
 /*--------------------Layout------------------*/
 .side-image {
-  margin: 0 0 0 10px; }
+  margin: 0 0 10px 10px; }
 
 /*--------------------Project Gallery------------------*/
 @media (min-width: 980px) and (min-height: 550px) {

@@ -36,10 +36,11 @@ ul li.expanded {
     background: #fff;
     overflow-y: auto;
     font-size: 1.125rem;
-    max-height: calc( 100vh - 60px);
+    height: calc( 100vh - 60px);
     overflow-y: auto;
     transition: transform .6s;
-    transform: translate(0, -100%);
+    // transform: translate(0, -100%);
+    transform: translate(100%, 0);
     
     &.open {
         transform: translate(0, 0);
@@ -55,6 +56,7 @@ ul li.expanded {
         position: static;
         background: transparent;
         transform: translate(0, 0);
+        height: auto;
         .content {
             padding: 0;
         }

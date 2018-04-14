@@ -38,6 +38,12 @@
 
 .flex, .flex-view .view-content {
   display: flex;
+  &.mobile-column {
+    @include for-mobile-layout {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
 }
 
 .align-center, .flex-view.align-center .view-content {
