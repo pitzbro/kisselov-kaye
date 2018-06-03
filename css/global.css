@@ -79,6 +79,9 @@
   z-index: -1; }
 
 /*------- Download Links ---------*/
+.zone-content a.full-link, .zone-content a.full-link:link, .zone-content a.full-link:visited {
+  display: block; }
+
 .download-file {
   line-height: 25px; }
   .download-file img:not(.admin-menu-icon) {
@@ -740,6 +743,37 @@ header.section {
   @media (min-width: 980px) and (min-height: 550px) {
     .column-grid {
       column-count: 5; } }
+
+/*----------------Text Grids-----------------*/
+.zone-content .text-grid-view .view-content {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-gap: 10px 10px;
+  grid-auto-rows: calc( ( 100vw - 40px ) / 2);
+  grid-auto-flow: dense; }
+  .zone-content .text-grid-view .view-content .grid-item {
+    overflow: hidden;
+    background: lightblue; }
+  .zone-content .text-grid-view .view-content h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; }
+  @media (min-width: 550px) {
+    .zone-content .text-grid-view .view-content {
+      grid-gap: 5px 5px;
+      grid-auto-rows: calc( ( 100vw - 40px ) / 5);
+      grid-template-columns: repeat(5, 1fr); } }
+  @media (min-width: 980px) {
+    .zone-content .text-grid-view .view-content {
+      grid-template-columns: repeat(6, 1fr);
+      grid-auto-rows: 139px; }
+      .zone-content .text-grid-view .view-content .large {
+        grid-column: span 2;
+        grid-row: span 2; } }
+  @media (min-width: 980px) and (min-height: 750px) {
+    .zone-content .text-grid-view .view-content {
+      grid-template-columns: repeat(5, 1fr);
+      grid-auto-rows: 168px; } }
 
 .side-menu-first, .side-menu-second {
   display: none; }

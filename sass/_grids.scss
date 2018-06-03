@@ -171,3 +171,47 @@
         column-count: 5;
     }
 }
+
+/*----------------Text Grids-----------------*/
+
+.zone-content .text-grid-view {
+    .view-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 10px 10px;
+        grid-auto-rows: calc( ( 100vw - 40px ) / 2 );
+        grid-auto-flow: dense;
+
+        .grid-item { 
+            overflow: hidden;
+            background: lightblue;
+        }
+
+        h2 {
+            white-space: nowrap; 
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        
+        @include for-narrow-layout {
+            grid-gap: 5px 5px;
+            grid-auto-rows: calc( ( 100vw - 40px ) / 5 );
+            grid-template-columns: repeat(5, 1fr);
+        }
+        
+        @include for-six-column-layout {
+            grid-template-columns: repeat(6, 1fr);
+            grid-auto-rows: 139px;
+
+            .large {
+                grid-column: span 2;
+                grid-row: span 2;
+            }
+        }
+        
+        @include for-five-column-layout {
+            grid-template-columns: repeat(5, 1fr);
+            grid-auto-rows: 168px;
+        }
+    }
+}

@@ -23,6 +23,10 @@
 
 /*------- Download Links ---------*/
 
+.zone-content a.full-link, .zone-content a.full-link:link, .zone-content a.full-link:visited {
+  display: block;
+}
+
 .download-file {
   line-height: 25px;
   img:not(.admin-menu-icon) {
