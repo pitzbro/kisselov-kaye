@@ -110,6 +110,9 @@ header.section {
     @include for-five-column-layout {
         margin: $header-footer-tall-height auto;
     }
+    @include for-narrow-wide-layout {
+        margin-top: 60px;
+    }
 
     .region-content-inner {
         position: relative;
@@ -200,6 +203,10 @@ header.section {
 /*-----  Footer ------*/
 
 footer.section {
+
+    .node-type-news & {
+        display: none;
+    }
 
     @include for-normal-layout {
         position: fixed;

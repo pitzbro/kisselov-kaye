@@ -23,6 +23,11 @@ $normal-height-breakpoint: 750px;
     @content;
   }
 }
+@mixin for-narrow-wide-layout {
+  @media (min-width: $mobile-breakpoint) and (max-height: $narrow-height-breakpoint) {
+    @content;
+  }
+}
 
 @mixin for-normal-layout {
   @media (min-width: $narrow-breakpoint) and (min-height: $narrow-height-breakpoint) { 
