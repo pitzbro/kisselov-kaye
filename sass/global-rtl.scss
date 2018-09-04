@@ -39,13 +39,6 @@
     padding: 0 0 0 20px;
 }
 
-.project-gallery .full-gallery {
-    background-position: left top;
-    @include for-gallery-spreaded-layout {
-        background-position: center;
-    }
-}
-
 
 
 .project-gallery .views-slideshow-controls-top a[rel='next'] {
@@ -60,12 +53,8 @@
     right: 0;
 }
 
-//--------------
+//-------------- Icon --------------//
 
-.image-grid-view .prize-icon {
-    right: auto;
-    left: 0;
-}
 
 ul li.expanded {
 
@@ -74,10 +63,20 @@ ul li.expanded {
         left: 0;
     }
 }
+
+.icon-thumbnail {
+    left: auto;
+    right: 0;
+}
 /*------- Download Links ---------*/
 
 .download-file {
     img:not(.admin-menu-icon) {
-      margin: 0 0 0 5px;
+        margin: 0 0 0 5px;
     }
-  }
+}
+.direct-download {
+    a::before {
+        margin: 0 0 0 5px;
+    }
+}

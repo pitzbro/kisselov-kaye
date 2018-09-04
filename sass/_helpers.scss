@@ -38,6 +38,49 @@
   }
 }
 
+.direct-download {
+  line-height: 25px;
+  a {
+    display: inline-flex !important;
+    align-items: center;
+    &::before {
+      content: "";
+      display: inline-block;
+      background-image: url(../images/svg/downloadIcon-black.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 16px;
+      border-radius: 51%;
+      width: 18px;
+      height: 14px;
+      margin: 0 5px 0 0;
+    }
+  }  
+}
+
+/*---------- Icons -------------*/
+
+.icon-thumbnail {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  margin: 5px;
+  background-image: url(../images/icons/icon_sprite.png);
+  background-repeat: no-repeat;
+  background-position-x: 0;
+
+  &.win {
+    background-position-y: -200px;
+  }
+
+  &.new {
+    background-position-y: -150px;
+  }
+}
+
 /*----------  Flex Helpers  ----------*/
 
 .flex, .flex-view .view-content {

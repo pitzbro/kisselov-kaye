@@ -23,16 +23,6 @@
             grid-auto-rows: 168px;
         }
     }
-    .prize-icon {
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 10;
-        margin: 5px;
-        background-image: url('../images/svg/winnerIcon.svg');
-    }
     
     .grid-item  {
         overflow: hidden;

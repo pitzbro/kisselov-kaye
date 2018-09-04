@@ -8,6 +8,12 @@ html body.admin-menu {
   font-size: 12px !important;
 }
 
+// Overlay Drupal Fix
+
+#overlay-container, .overlay-modal-background, .overlay-element {
+  position: fixed;
+}
+
 /*-------------Layout---------------*/
 
 // .tabs {
