@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Layout */
 /* Fonts */
 /* Text */
@@ -963,6 +964,19 @@ body.i18n-he aside.region-menu div[class$="-all"] {
     .node-contact-page {
       flex-direction: row;
       align-items: center; } }
+
+/*------ News -------------*/
+.page-academia .region-sidebar-first::before {
+  content: "אדריכלות מורכבת מהיבטים חברתיים, כלכליים ואקולוגים בלתי נפרדים"; }
+
+.page-academia .region-sidebar-second::before {
+  content: "על האדריכל מוטלת אחריות כבדה בעיצוב פני החברה ועתידה"; }
+
+.page-news .region-sidebar-first::before {
+  content: "תעוזה, פתיחות וסקרנות מובילות לגיוון, חדשנות ויצירתיות דינאמית"; }
+
+.page-news .region-sidebar-second::before {
+  content: "מסורת מקצועית של למעלה משבעים שנה היא תולדה של שירות אישי מוקפד ומדוייק"; }
 
 /* Components */
 .logo-block {
