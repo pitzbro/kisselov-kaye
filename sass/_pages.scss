@@ -13,6 +13,12 @@
 
 /*------ News -------------*/
 
+.region-sidebar-first::before, .region-sidebar-second::before {
+    text-align: justify; /* For Edge */ 
+    text-align-last: justify;
+    display: block;
+}
+
 .i18n-he.page-academia .region-sidebar-first::before {
     content: "אדריכלות מורכבת מהיבטים חברתיים, כלכליים ואקולוגים בלתי נפרדים";
 }

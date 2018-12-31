@@ -124,7 +124,8 @@
   background-position-x: 0;
   background-position-y: 50px; }
   .icon-thumbnail.static {
-    position: static; }
+    position: static;
+    margin: 0; }
   .icon-thumbnail.win, .icon-thumbnail.זכיה {
     background-position-y: -200px; }
   .icon-thumbnail.new {
@@ -978,6 +979,12 @@ body.i18n-he aside.region-menu div[class$="-all"] {
       align-items: center; } }
 
 /*------ News -------------*/
+.region-sidebar-first::before, .region-sidebar-second::before {
+  text-align: justify;
+  /* For Edge */
+  text-align-last: justify;
+  display: block; }
+
 .i18n-he.page-academia .region-sidebar-first::before {
   content: "אדריכלות מורכבת מהיבטים חברתיים, כלכליים ואקולוגים בלתי נפרדים"; }
 
