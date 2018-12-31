@@ -62,6 +62,7 @@
 
 .icon-thumbnail {
   width: 30px;
+  flex: 0 0 30px;
   height: 30px;
   position: absolute;
   top: 0;
@@ -71,13 +72,30 @@
   background-image: url(../images/icons/icon_sprite.png);
   background-repeat: no-repeat;
   background-position-x: 0;
+  background-position-y: 50px;
 
-  &.win {
+  &.static {
+    position: static;
+  }
+
+  &.win, &.זכיה {
     background-position-y: -200px;
   }
 
   &.new {
     background-position-y: -150px;
+  }
+
+  &.מעורבות {
+    background-position-y: -50px;
+  }
+
+  &.תחרויות {
+    background-position-y: -100px;
+  }
+
+  &.פרסומים {
+    background-position-y: -250px;
   }
 }
 

@@ -112,6 +112,7 @@
 /*---------- Icons -------------*/
 .icon-thumbnail {
   width: 30px;
+  flex: 0 0 30px;
   height: 30px;
   position: absolute;
   top: 0;
@@ -120,11 +121,20 @@
   margin: 5px;
   background-image: url(../images/icons/icon_sprite.png);
   background-repeat: no-repeat;
-  background-position-x: 0; }
-  .icon-thumbnail.win {
+  background-position-x: 0;
+  background-position-y: 50px; }
+  .icon-thumbnail.static {
+    position: static; }
+  .icon-thumbnail.win, .icon-thumbnail.זכיה {
     background-position-y: -200px; }
   .icon-thumbnail.new {
     background-position-y: -150px; }
+  .icon-thumbnail.מעורבות {
+    background-position-y: -50px; }
+  .icon-thumbnail.תחרויות {
+    background-position-y: -100px; }
+  .icon-thumbnail.פרסומים {
+    background-position-y: -250px; }
 
 /*----------  Flex Helpers  ----------*/
 .flex, .flex-view .view-content {
@@ -795,11 +805,13 @@ header.section {
   .zone-content .text-grid-view .view-content a:hover {
     color: inherit; }
   .zone-content .text-grid-view .view-content h2 {
-    white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    width: calc(100% - 40px);
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    line-height: 1.1;
+    min-height: 40px; }
+  .zone-content .text-grid-view .view-content .grid-title {
+    margin-bottom: 12px; }
   .zone-content .text-grid-view .view-content .short-text {
     display: none; }
   @media (max-width: 550px) {
@@ -825,7 +837,7 @@ header.section {
         grid-row: span 2; }
       .zone-content .text-grid-view .view-content .without-image {
         grid-column: span 2;
-        grid-row: span 1; } }
+        grid-row: span 1 !important; } }
   @media (min-width: 1100px) and (min-height: 750px) {
     .zone-content .text-grid-view .view-content {
       grid-template-columns: repeat(5, 1fr);
@@ -966,17 +978,29 @@ body.i18n-he aside.region-menu div[class$="-all"] {
       align-items: center; } }
 
 /*------ News -------------*/
-.page-academia .region-sidebar-first::before {
+.i18n-he.page-academia .region-sidebar-first::before {
   content: "אדריכלות מורכבת מהיבטים חברתיים, כלכליים ואקולוגים בלתי נפרדים"; }
 
-.page-academia .region-sidebar-second::before {
+.i18n-he.page-academia .region-sidebar-second::before {
   content: "על האדריכל מוטלת אחריות כבדה בעיצוב פני החברה ועתידה"; }
 
-.page-news .region-sidebar-first::before {
+.i18n-he.page-news .region-sidebar-first::before {
   content: "תעוזה, פתיחות וסקרנות מובילות לגיוון, חדשנות ויצירתיות דינאמית"; }
 
-.page-news .region-sidebar-second::before {
+.i18n-he.page-news .region-sidebar-second::before {
   content: "מסורת מקצועית של למעלה משבעים שנה היא תולדה של שירות אישי מוקפד ומדוייק"; }
+
+.page-academia .region-sidebar-first::before {
+  content: "Architecture manifests in complex cultural, socia, economic and ecological faces"; }
+
+.page-academia .region-sidebar-second::before {
+  content: "Boldness, openness & curiosity foster diversity, innovation & dynamic creativity"; }
+
+.page-news .region-sidebar-first::before {
+  content: "The architect's burden is to envision and realize the future of society"; }
+
+.page-news .region-sidebar-second::before {
+  content: "Seventy years of meticulous professional tradition produce exacting personal service"; }
 
 /* Components */
 .logo-block {
