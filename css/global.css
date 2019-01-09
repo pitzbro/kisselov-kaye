@@ -803,6 +803,9 @@ header.section {
     .zone-content .text-grid-view .view-content .grid-item:hover {
       border: solid 15px #eee;
       background: #eee; }
+    .zone-content .text-grid-view .view-content .grid-item.weather-block {
+      background: #fff;
+      border: solid 10px #fff; }
   .zone-content .text-grid-view .view-content a:hover {
     color: inherit; }
   .zone-content .text-grid-view .view-content h2 {
@@ -854,7 +857,9 @@ header.section {
         grid-column: span 1;
         grid-row: span 1; }
         .zone-content .text-grid-view .view-content .small .long-text, .zone-content .text-grid-view .view-content .small img {
-          display: none; } }
+          display: none; }
+        .zone-content .text-grid-view .view-content .small img.weather-image {
+          display: block; } }
 
 .side-menu-first, .side-menu-second {
   display: none; }
@@ -978,7 +983,12 @@ body.i18n-he aside.region-menu div[class$="-all"] {
       flex-direction: row;
       align-items: center; } }
 
-/*------ News -------------*/
+/*---------------- News -------------*/
+.region-header-first .weather-block {
+  display: none; }
+  .region-header-first .weather-block img {
+    display: block; }
+
 .region-sidebar-first::before, .region-sidebar-second::before {
   text-align: justify;
   /* For Edge */
@@ -995,8 +1005,9 @@ body.i18n-he aside.region-menu div[class$="-all"] {
   content: "תעוזה, פתיחות וסקרנות מובילות לגיוון, חדשנות ויצירתיות דינאמית"; }
 
 .i18n-he.page-news .region-sidebar-second::before {
-  content: "מסורת מקצועית של למעלה משבעים שנה היא תולדה של שירות אישי מוקפד ומדוייק"; }
+  content: "מסורת מקצועית של למעלה משבעים שנה, תולדה של שירות מוקפד ומדויק"; }
 
+/*--------------- Academia -------------*/
 .page-academia .region-sidebar-first::before {
   content: "Architecture manifests in complex cultural, socia, economic and ecological faces"; }
 

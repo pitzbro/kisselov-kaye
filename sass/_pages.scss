@@ -11,7 +11,14 @@
     }
 }
 
-/*------ News -------------*/
+/*---------------- News -------------*/
+
+.region-header-first .weather-block {
+    display: none;
+    img {
+        display: block;
+    }
+}
 
 .region-sidebar-first::before, .region-sidebar-second::before {
     text-align: justify; /* For Edge */ 
@@ -30,9 +37,10 @@
     content: "תעוזה, פתיחות וסקרנות מובילות לגיוון, חדשנות ויצירתיות דינאמית";
 }
 .i18n-he.page-news .region-sidebar-second::before {
-    content: "מסורת מקצועית של למעלה משבעים שנה היא תולדה של שירות אישי מוקפד ומדוייק";
+    content: "מסורת מקצועית של למעלה משבעים שנה, תולדה של שירות מוקפד ומדויק";
 }
 
+/*--------------- Academia -------------*/
 
 .page-academia .region-sidebar-first::before {
     content: "Architecture manifests in complex cultural, socia, economic and ecological faces";

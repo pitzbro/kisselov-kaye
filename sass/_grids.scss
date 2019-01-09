@@ -180,6 +180,10 @@
                 border: solid 15px #eee;
                 background: #eee;
             }
+            &.weather-block {
+                background: #fff;
+                border: solid 10px #fff;
+            }
         }
 
         a:hover {
@@ -259,6 +263,10 @@
 
                 .long-text, img {
                     display: none;
+                }
+
+                img.weather-image {
+                    display: block;
                 }
             }
         }
