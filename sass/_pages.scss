@@ -55,3 +55,29 @@
 .page-news .region-sidebar-second::before {
     content: "Seventy years of meticulous professional tradition produce exacting personal service";
 }
+
+
+// ----------------- Unleashed --------------  //@at-root
+
+body.page-unleashed {
+
+    header.section {
+        background: transparent;
+    }
+
+    .zone-content {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .region-content {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+
+    footer.section {
+        background: transparent;
+        width: 0;
+    }
+}

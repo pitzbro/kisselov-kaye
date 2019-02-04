@@ -896,6 +896,29 @@ header.section {
   .empty-view-pic .view-empty.pic8 {
     background-image: url("../images/empty/8.gif"); }
 
+/*-----------Random Image Grid----------------*/
+.grid.random > .view-content {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(180px, 280px);
+  gap: 3vw; }
+  @media (min-width: 1100px) {
+    .grid.random > .view-content {
+      grid-template-columns: repeat(4, 1fr); } }
+  @media (min-width: 550px) {
+    .grid.random > .view-content {
+      grid-template-columns: repeat(3, 1fr); } }
+  @media (max-width: 550px) {
+    .grid.random > .view-content {
+      grid-template-columns: repeat(2, 1fr); } }
+  .grid.random > .view-content .random-grid-item * {
+    display: block;
+    height: 100%; }
+  .grid.random > .view-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; }
+
 .side-menu-first, .side-menu-second {
   display: none; }
 
@@ -1054,6 +1077,22 @@ body.i18n-he aside.region-menu div[class$="-all"] {
 
 .page-news .region-sidebar-second::before {
   content: "Seventy years of meticulous professional tradition produce exacting personal service"; }
+
+body.page-unleashed header.section {
+  background: transparent; }
+
+body.page-unleashed .zone-content {
+  width: 100%;
+  overflow: hidden; }
+
+body.page-unleashed .region-content {
+  width: 100%;
+  margin: 0;
+  padding: 0; }
+
+body.page-unleashed footer.section {
+  background: transparent;
+  width: 0; }
 
 /* Components */
 .logo-block {

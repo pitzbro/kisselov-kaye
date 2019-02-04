@@ -304,3 +304,35 @@
     &.pic7 { background-image: url('../images/empty/7.gif') }
     &.pic8 { background-image: url('../images/empty/8.gif') }
 }
+
+/*-----------Random Image Grid----------------*/
+
+
+.grid.random > .view-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-rows: minmax(180px, 280px);
+    gap: 3vw;
+    
+    @include for-six-column-layout {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    @include for-narrow-layout {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    @include for-mobile-layout {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .random-grid-item * {
+        display: block;
+        height: 100%;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
