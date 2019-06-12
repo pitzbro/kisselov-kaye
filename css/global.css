@@ -79,6 +79,9 @@
   left: 0;
   z-index: -1; }
 
+.light-text {
+  color: #B0B0B0; }
+
 /*------- Download Links ---------*/
 .zone-content a.full-link, .zone-content a.full-link:link, .zone-content a.full-link:visited {
   display: block; }
@@ -201,6 +204,16 @@ a.more-link {
     .info-link-container a.info-link:hover {
       text-decoration: none;
       background: #000; }
+
+.mobile-menu-only {
+  display: none; }
+  @media (max-width: 1100px), (max-height: 550px) {
+    .mobile-menu-only {
+      display: block; } }
+
+@media (max-width: 1100px), (max-height: 550px) {
+  .expanded-menu-only {
+    display: none; } }
 
 /*------------Admin CSS---------*/
 html body.admin-menu {
@@ -429,11 +442,22 @@ header.section {
     .zone-content a:hover, .zone-content a:link:hover, .zone-content a:visited:hover {
       color: #B0B0B0; }
 
+@media (max-width: 550px) {
+  .group-basic-main-content {
+    flex-direction: column; } }
+
 .side-image {
   flex: 0 0 190px;
   margin: 0 10px 10px 0; }
   .side-image img {
     width: 180px; }
+  @media (max-width: 550px) {
+    .side-image {
+      flex: 0 0 auto; } }
+
+.left-text {
+  padding-right: 20px;
+  border-right: 1px solid #000; }
 
 /*-----Menu Region------*/
 .view-filters {
@@ -809,6 +833,7 @@ header.section {
   .zone-content .text-grid-view .view-content a:hover {
     color: inherit; }
   .zone-content .text-grid-view .view-content h2 {
+    font-size: 1.375rem;
     overflow: hidden;
     text-overflow: ellipsis;
     margin-bottom: 0;
@@ -836,7 +861,7 @@ header.section {
         display: block; }
       .zone-content .text-grid-view .view-content .long-text {
         display: none; }
-      .zone-content .text-grid-view .view-content .with-image {
+      .zone-content .text-grid-view .view-content .with-image, .zone-content .text-grid-view .view-content .weather-block {
         grid-column: span 2;
         grid-row: span 2; }
       .zone-content .text-grid-view .view-content .without-image {
@@ -1164,7 +1189,7 @@ body.page-unleashed footer.section {
     height: 100%; }
   .hamburger-btn .line {
     display: block;
-    background: #000;
+    background: #B0B0B0;
     height: 2px;
     width: 20px;
     position: absolute;

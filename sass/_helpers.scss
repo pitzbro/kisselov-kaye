@@ -21,6 +21,12 @@
   z-index: -1;
 }
 
+// ---------------   Inline helpers   --------------//
+
+.light-text {
+  color: $color-2;
+}
+
 /*------- Download Links ---------*/
 
 .zone-content a.full-link, .zone-content a.full-link:link, .zone-content a.full-link:visited {
@@ -188,4 +194,20 @@ a.more-link {
         background: #000;
       }
     } 
+}
+
+// Media Queries Helpers  //
+
+
+.mobile-menu-only {
+  display: none;
+  @include for-gallery-spreaded-layout {
+    display: block;
+  }
+}
+
+.expanded-menu-only {
+  @include for-gallery-spreaded-layout {
+    display: none;
+  }
 }
