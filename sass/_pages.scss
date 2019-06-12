@@ -61,13 +61,14 @@
 
 body.page-unleashed {
 
+    overflow-x: hidden;
+
     header.section {
         background: transparent;
     }
 
     .zone-content {
         width: 100%;
-        overflow: hidden;
     }
 
     .region-content {
