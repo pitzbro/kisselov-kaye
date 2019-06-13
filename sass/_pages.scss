@@ -63,6 +63,28 @@ body.page-unleashed {
 
     overflow-x: hidden;
 
+    header.section .region-header-second-inner {
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .block-blockify-page-title {
+        flex: 0 0 auto;
+    }
+    
+    @include for-normal-layout { 
+        h1 {
+            margin-right: 60px;
+        }
+        
+        .block-blockify-page-title {
+            flex: 1;
+            text-align: start;
+        }
+
+    }
+
+
     header.section {
         background: transparent;
     }

@@ -1,5 +1,6 @@
 $mobile-breakpoint: 550px;
 $narrow-breakpoint: 1100px;
+$wide-breakpoint: 1500px;
 $narrow-height-breakpoint: 550px;
 $normal-height-breakpoint: 750px;
 
@@ -31,6 +32,20 @@ $normal-height-breakpoint: 750px;
 
 @mixin for-normal-layout {
   @media (min-width: $narrow-breakpoint) and (min-height: $narrow-height-breakpoint) { 
+    @content;
+  }
+
+}
+
+@mixin for-wide-layout {
+  @media (min-width: $narrow-breakpoint) { 
+    @content;
+  }
+
+}
+
+@mixin for-extra-wide-layout {
+  @media (min-width: $wide-breakpoint) { 
     @content;
   }
 
