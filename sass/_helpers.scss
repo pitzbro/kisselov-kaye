@@ -64,6 +64,15 @@
   }  
 }
 
+/*---------- Lists -------------*/
+
+.comma-list {
+  > *:not(:last-child)::after {
+    content: ', ';
+  }
+}
+
+
 /*---------- Icons -------------*/
 
 .icon-thumbnail {
@@ -275,12 +284,21 @@ a.more-link {
 }
 
 .search-icon {
-  position: relative;
-  top: 4px;
-  margin-right: 16px;
-  transform: scale(0.8);
+  margin-right: 10px;
+  margin-bottom: 4px;
   button {
     padding: 0;
+  }
+}
+
+.view-search {
+  h3 {
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+  }
+  h5 {
+    margin-bottom: rem(2px);
   }
 }
 

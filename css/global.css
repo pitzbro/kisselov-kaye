@@ -112,6 +112,10 @@
       height: 14px;
       margin: 0 5px 0 0; }
 
+/*---------- Lists -------------*/
+.comma-list > *:not(:last-child)::after {
+  content: ', '; }
+
 /*---------- Icons -------------*/
 .icon-thumbnail {
   width: 30px;
@@ -255,12 +259,18 @@ a.more-link {
       display: none; }
 
 .search-icon {
-  position: relative;
-  top: 4px;
-  margin-right: 16px;
-  transform: scale(0.8); }
+  margin-right: 10px;
+  margin-bottom: 4px; }
   .search-icon button {
     padding: 0; }
+
+.view-search h3 {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 20px;
+  padding-bottom: 10px; }
+
+.view-search h5 {
+  margin-bottom: 0.125rem; }
 
 /*------------Admin CSS---------*/
 html body.admin-menu {
@@ -560,7 +570,7 @@ header.section {
   padding: 0; }
 
 /*-----  Footer ------*/
-.node-type-news footer.section {
+.node-type-news footer.section, .page-search-page footer.section {
   display: none; }
 
 @media (min-width: 1100px) and (min-height: 550px) {
@@ -880,6 +890,14 @@ header.section {
     .zone-content .text-grid-view .view-content .grid-item.weather-block {
       background: #fff;
       border: solid 10px #fff; }
+      .zone-content .text-grid-view .view-content .grid-item.weather-block .weather-info {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 0 10px; }
+      .zone-content .text-grid-view .view-content .grid-item.weather-block .weather-temperture {
+        font-family: "Rubik-Bold";
+        font-size: 1.375rem; }
   .zone-content .text-grid-view .view-content a:hover {
     color: inherit; }
   .zone-content .text-grid-view .view-content h2 {
@@ -986,6 +1004,9 @@ header.section {
   @media (max-width: 550px) {
     .grid.random > .view-content {
       grid-template-columns: repeat(2, 1fr); } }
+  @media (max-width: 450px) {
+    .grid.random > .view-content {
+      grid-template-columns: repeat(1, 1fr); } }
   @media (min-width: 1100px) {
     .grid.random > .view-content {
       grid-template-columns: repeat(4, 1fr); } }
@@ -1050,7 +1071,7 @@ ul li.expanded {
         padding: 0; } }
   .main-menu ul.menu {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex: 0 0 500px;
     flex-direction: column; }
     @media (min-width: 1100px) and (min-height: 550px) {

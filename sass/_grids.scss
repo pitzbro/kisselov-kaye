@@ -188,6 +188,16 @@
             &.weather-block {
                 background: #fff;
                 border: solid 10px #fff;
+                .weather-info {
+                    position: absolute;
+                    bottom: 0;
+                    left: 0;
+                    padding: 0 10px;
+                }
+                .weather-temperture {
+                    font-family: "Rubik-Bold";
+                    font-size: rem(22px);
+                }
             }
         }
 
@@ -328,6 +338,9 @@
     }
     @include for-mobile-layout {
         grid-template-columns: repeat(2, 1fr);
+    }
+    @media(max-width: 450px) {
+        grid-template-columns: repeat(1, 1fr);
     }
     @include for-wide-layout {
         grid-template-columns: repeat(4, 1fr);
