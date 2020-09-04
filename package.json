@@ -9,7 +9,7 @@
     "styles-rtl": "node-sass sass/global-rtl.scss -o css --watch"
   },
   "devDependencies": {
-    "node-sass": "^4.11.0",
+    "node-sass": "^4.13.1",
     "npm-run-all": "^3.1.1"
   },
   "dependencies": {
