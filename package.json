@@ -16,6 +16,6 @@
     "font-awesome": "^4.7.0",
     "jquery": "^3.4.1",
     "normalize.css": "^5.0.0",
-    "npm-check-updates": "^13.0.3"
+    "npm-check-updates": "^16.7.4"
   }
 }
